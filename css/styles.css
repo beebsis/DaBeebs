@@ -11,6 +11,7 @@ html {
     background-color: var(--cp2-primary);
     color: var(--cp2-fourth);
     font-family: 'Inconsolata', monospace;
+    scroll-behavior: smooth;
     /* 
     making the ROOT font size 1px 
     Calculation would change to 1px * 20rem = 20px
@@ -52,6 +53,7 @@ nav {
 
 #site-title {
     font-size: 32rem;
+    text-transform: uppercase;
 }
 
 nav ul {
