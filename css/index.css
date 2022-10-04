@@ -31,20 +31,20 @@ main {
     font-weight: bold;
 }
 
-#goals, #schedule, #guidelines {
+#goals, #schedule, #guidelines, #streamer-container {
     text-align: center;
 }
 
-#goals > h1, #schedule > h1, #guidelines > h1 {
+#goals > h1, #schedule > h1, #guidelines > h1, #streamer-container > h1 {
     font-size: 46rem;
 }
 
-#goals > p , #schedule > p, #guidelines > p {
+#goals > p , #schedule > p, #guidelines > p, #streamer-container > p {
     font-size: 30rem;
     padding: 15rem 0 15rem 0;
 }
 
-#goals > i , #schedule > i, #guidelines > i {
+#goals > i , #schedule > i, #guidelines > i, #streamer-container > i {
     font-size: 50rem;
     padding-bottom: 15rem;
 }
@@ -194,4 +194,104 @@ main {
 
 .discord-role {
     color: var(--cp5-fourth);
+}
+
+.discord-info {
+    padding-top: 50rem;
+}
+
+.discord-info h2 {
+    font-size: 48rem;
+}
+
+.discord-roles {
+    display: grid;
+    grid-template-columns: repeat(5, 256rem);
+    grid-template-rows: repeat(3, 256rem);
+    gap: 20rem;  
+    justify-content: center;
+    
+    width: 100%;
+    padding: 50rem;
+}
+
+.card-role {
+    padding: 20rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cp2-primary);
+    border-radius: 15rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-role h3, .card-role i {
+    font-size: 28rem;
+}
+
+.card-role h3 {
+    margin-top: auto;
+}
+
+.card-role i {
+    margin-bottom: auto;
+}
+
+.card-role p {
+    font-size: 18rem;
+    flex-grow: 1;
+}
+
+/*! Streamers */
+.Streamer-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 256rem);
+    grid-template-rows: repeat(3, 326rem);
+    gap: 20rem;  
+    justify-content: center;
+    
+    width: 100%;
+    padding: 50rem;
+}
+
+.streamer {
+    padding: 20rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cp2-primary);
+    border-radius: 15rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.streamer-info {
+    padding-top: 15rem;
+}
+
+.streamer h3, .card-role i {
+    font-size: 28rem;
+}
+
+.streamer h3 {
+    margin-top: auto;
+}
+
+.restriction {
+    margin-bottom: auto;
+    font-size: 28rem;
+}
+
+.streamer p {
+    font-size: 18rem;
+    flex-grow: 1;
+}
+
+.streamer-pic img {
+    width: 200rem;
+    height: auto;
+    border-radius: 12rem;
+}
+
+.restriction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

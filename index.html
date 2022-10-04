@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/colors.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="./js/discords_role.js" defer></script>
+
     <title>Da Beebs</title>
 </head>
 <body>
@@ -21,8 +24,7 @@
                     <li><a href="#goals">goals</a></li>
                     <li><a href="#schedule">Schedule</a></li>
                     <li><a href="#guidelines">Guidelines</a></li>
-                    <li><a href="#socials">Socials</a></li>
-                    <li><a href="#streamers">Streamers</a></li>
+                    <li><a href="#streamer-container">Streamers</a></li>
                     <li><a href="#art_credits">Art Credits</a></li>
                     <li><a href="#top_contributes">Top Contributors</a></li>
                     <li><a href="#contribute">Contribute</a></li>
@@ -45,9 +47,9 @@
                 </div>
             </div>
             <div class="socials">
-                <a href=""><i class="fa-brands fa-discord"></i></a>
-                <a href=""><i class="fa-brands fa-twitch"></i></a>
-                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://discord.com/invite/vaAGH5y9zU" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://twitch.tv/beebsis" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+                <a href="https://twitter.com/beebsis" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
             </div>
         </div>
 
@@ -187,16 +189,32 @@
                     <li>If you want to complain about a staff, or feel like you've been unfairly punished, contact Beebsis#0001.</li>
                 </ol>
             </div>
-            <div class="discord-roles">
-                <div class="card-role">
-                    <h2>Admin</h2>
-                    <p>Admin role</p>
-                    <i class="fa-solid fa-shield"></i>
-                </div>
-                <div class="card-role">
-                    <h2>Admin</h2>
-                    <p>Admin role</p>
-                    <i class="fa-solid fa-shield-halved"></i>
+            <div class="discord-info">
+                <h2>Discord roles and meaning</h2>
+                <div class="discord-roles"></div>
+            </div>
+        </div>
+
+        <!--! Streamers -->
+        <div id="streamer-container">
+            <i class="fa-solid fa-arrow-down"></i>
+            <h1>Fellow Streamers</h1>
+            <p>Have a nice look around the Community</p>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <div class="Streamer-cards">
+                <div class="streamer">
+                    <div class="streamer-pic">
+                        <img src="./assets/test-img.webp" alt="">
+                    </div>
+                    <div class="streamer-info">
+                        <h3>xHyraldia</h3>
+                        <p>Aloha! ♥ It´s me, your friendly neighbourhood space dragon! ♥</p>
+                        <div class="restriction">
+                            <p>Pegi: <span>18</span></p>
+                            <i class="fa-solid fa-person"></i>
+                        </div>
+                        <p><a href="https://twitch.tv/xhyraldia">Check out</a></p>
+                    </div>
                 </div>
             </div>
         </div>
