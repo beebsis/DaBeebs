@@ -44,11 +44,19 @@ html, body {
     height: 100%;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    background-color: var(--cp2-primary);
+    width: 100%;
+    z-index: 99;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15rem 30rem 15rem 30rem
+    padding: 15rem 30rem 15rem 30rem;
 }
 
 #site-title {
@@ -60,7 +68,7 @@ nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 15rem;
+    gap: 30rem;
 }
 
 .nav-links {
