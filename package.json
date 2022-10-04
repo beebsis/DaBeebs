@@ -1,0 +1,19 @@
+{
+  "name": "dabeebs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beebsis/DaBeebs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beebsis/DaBeebs/issues"
+  },
+  "homepage": "https://github.com/beebsis/DaBeebs#readme"
+}
