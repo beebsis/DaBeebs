@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1px;
+    background-color: var(--cp2-primary);
+    color: var(--cp2-fourth);
+    /* 
+    making the ROOT font size 1px 
+    Calculation would change to 1px * 20rem = 20px
+    We can do this since IE is no longer getting supported
+
+    Increase/reduction would also be easy. 
+
+        40% increase
+        @media (min-width: 320px){
+            html{ font-size:1.4px; }
+        }
+
+        20% increase
+        @media (min-width: 600px){
+            html{ font-size:1.2px; }
+        }
+
+        20% decrease
+        @media (min-width: 1920px) {
+            html{ font-size: 0.8px}
+        }
+    */
+}
+
+/* Sets the height and with to 100% of screen-size. Fixes horizontal overflow with max and 100%*/
+html, body {
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15rem 30rem 15rem 30rem
+}
+
+#site-title {
+    font-size: 32rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+}
+
+.nav-links {
+    font-size: 18rem;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 3px dotted transparent;
+    outline: none;
+    transition: all ease-in-out .3s;
+}
+
+a:hover {
+    border-bottom: 3px dotted var(--cp1-fourth);
+    color: var(--cp3-primary);
+}
+
+a:focus {
+    border-bottom: 3px dotted var(--cp1-fourth);
+    color: var(--cp3-primary);
+}
