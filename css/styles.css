@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@ html {
     font-size: 1px;
     background-color: var(--cp2-primary);
     color: var(--cp2-fourth);
+    font-family: 'Inconsolata', monospace;
     /* 
     making the ROOT font size 1px 
     Calculation would change to 1px * 20rem = 20px
