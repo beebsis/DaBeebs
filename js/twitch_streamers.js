@@ -14,7 +14,7 @@ const streamers =
     {
         name: "meiiwukou",
         link: "https://twitch.tv/meiiwukou",
-        info: "A friend you keep safe in your memories. Let's do our best today too. An EN Vtuber!",
+        info: "A friend you keep safe in your memories. Let's do our best today too.",
         pegi: {
             age: "everyone",
             icon: "fa-solid fa-people-group"
@@ -58,13 +58,35 @@ const streamers =
     {
         name: "huntress_venus",
         link: "https://twitch.tv/huntress_venus",
-        info: "Chaotic Screaming Wolf Huntress At Your Service.",
+        info: "Anime artist, tomboi and not girly! I'm bad at video games.",
         pegi: {
             age: "mature",
             icon: "fa-solid fa-person"
         },
         tags: ["Cozy", "Chaotic", "Gremlin"],
         picture: "huntress_venus.png"
+    },
+    {
+        name: "zellisart",
+        link: "https://twitch.tv/zellisart",
+        info: "I stream art/drawing and various video games. I'm picky and I mostly play FPS, don't like PvP. I'm a CASUAL gamer.",
+        pegi: {
+            age: "mature",
+            icon: "fa-solid fa-person"
+        },
+        tags: ["Chaotic", "Tomboi", "Cozy"],
+        picture: "zellisart.png"
+    },
+    {
+        name: "xxspexiexx",
+        link: "https://twitch.tv/xxspexiexx",
+        info: "I'm a artist/gamer who likes streaming what I do! I enjoy food and company, very into the color black. Keeper of horny jail",
+        pegi: {
+            age: "mature",
+            icon: "fa-solid fa-person"
+        },
+        tags: ["Chaotic", "Laughter", "Cozy"],
+        picture: "xxspexiexx.png"
     },
     {
         name: "KyeraMoon",
