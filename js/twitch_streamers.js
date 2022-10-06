@@ -8,6 +8,7 @@ const streamers =
             age: "mature",
             icon: "fa-solid fa-person"
         },
+        tags: ["Cozy", "Chaotic", "Relaxing"],
         picture: "xhyraldia.png"
     },
     {
@@ -18,17 +19,52 @@ const streamers =
             age: "everyone",
             icon: "fa-solid fa-people-group"
         },
+        tags: ["Cozy", "Soft", "Relaxing"],
         picture: "meiiwukou.jpg"
     },
     {
         name: "renaynee ",
         link: "https://twitch.tv/renaynee",
-        info: "You can call me Rena or Renay 🖤 I'm just a lonely immortal who is looking to reconnect with humans again.",
+        info: "Just a lonely immortal who is looking to reconnect with humans again.",
         pegi: {
             age: "mature",
             icon: "fa-solid fa-person"
         },
+        tags: ["Cozy", "Chaotic", "Cheaky"],
         picture: "renaynee.png"
+    },
+    {
+        name: "yuzulmn",
+        link: "https://twitch.tv/yuzulmn",
+        info: "I am Yuzu, your favorite loot goblin!! We play games, do art and chat a lot!",
+        pegi: {
+            age: "mature",
+            icon: "fa-solid fa-person"
+        },
+        tags: ["Goblin", "Chaotic", "LOOT"],
+        picture: "yuzulmn.png"
+    },
+    {
+        name: "mahochiii",
+        link: "https://www.twitch.tv/mahochiii",
+        info: "I'm just a small goldfish having fun on twitch.",
+        pegi: {
+            age: "everyone",
+            icon: "fa-solid fa-people-group"
+        },
+        tags: ["Cozy", "Chaotic", "Confused"],
+        picture: "mahochiii.png"
+    },
+    {
+        name: "huntress_venus",
+        link: "https://twitch.tv/huntress_venus",
+        info: "Chaotic Screaming Wolf Huntress At Your Service.",
+        pegi: {
+            age: "mature",
+            icon: "fa-solid fa-person"
+        },
+        tags: ["Cozy", "Chaotic", "Gremlin"],
+        picture: "huntress_venus.png"
     },
     {
         name: "KyeraMoon",
@@ -38,26 +74,18 @@ const streamers =
             age: "everyone",
             icon: "fa-solid fa-people-group"
         },
+        tags: ["Cozy", "Chaotic", "Retro"],
         picture: "KyeraMoon.jpg"
-    },
-    {
-        name: "yuzulmn",
-        link: "https://twitch.tv/yuzulmn",
-        info: "I am Yuzu, your favorite loot goblin!! On this channel we play games (I love MMOs but a lot of other stuff too), do art and chat a lot!",
-        pegi: {
-            age: "mature",
-            icon: "fa-solid fa-person"
-        },
-        picture: "yuzulmn.png"
     },
     {
         name: "hoshiiko__",
         link: "https://twitch.tv/hoshiiko__",
-        info: "en/việt vtuber~! | *ੈ✩‧₊˚  Hi! i'm an ex-princess here to vibe with the cuties~ <3 I mainly started streaming to record the moments with my close friends.",
+        info: "en/việt vtuber~! I'm an ex-princess here to vibe with the cuties~",
         pegi: {
             age: "mature",
             icon: "fa-solid fa-person"
         },
+        tags: ["Crazy", "Chaotic", "WTF"],
         picture: "hoshiko__.png"
     },
 ]
@@ -77,6 +105,7 @@ function createStreamer() {
         const streamer_pic = document.createElement("img");
         const streamer_info_name = document.createElement("h3");
         const streamer_info_desc = document.createElement("p");
+        const streamer_tags = document.createElement("p");
 
         const streamer_pegi = document.createElement("p");
         const streamer_pegi_span = document.createElement("span");
@@ -90,6 +119,7 @@ function createStreamer() {
         streamer_pegi_span.innerHTML = streamers[i].pegi.age;
         streamer_info_name.innerHTML = streamers[i].name;
         streamer_info_desc.innerHTML = streamers[i].info;
+        streamer_tags.innerHTML = streamers[i].tags.join(', ');
         streamer_link.innerHTML = "View";
 
 
@@ -100,6 +130,7 @@ function createStreamer() {
         streamer_restriction_div.classList.add("restriction");
         streamer_icon.classList = streamers[i].pegi.icon;
         streamer_info_div.classList.add("streamer-info");
+        streamer_tags.classList.add("streamer_tags");
         streamer_link.classList = "streamer_link_btn";
         streamer_link_a.href = streamers[i].link;
         
@@ -113,6 +144,7 @@ function createStreamer() {
         // Append to sub divs
         streamer_pic_div.appendChild(streamer_pic);
         streamer_info_div.appendChild(streamer_info_name);
+        streamer_info_div.appendChild(streamer_tags);
         streamer_info_div.appendChild(streamer_info_desc);
         streamer_restriction_div.appendChild(streamer_pegi);
         streamer_pegi.appendChild(streamer_pegi_span);

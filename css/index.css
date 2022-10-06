@@ -289,6 +289,11 @@ main {
     margin-top: auto;
 }
 
+.streamer_tags {
+    padding: 10rem 0 10rem 0;
+    text-transform: uppercase;
+}
+
 .restriction {
     margin-bottom: auto;
     font-size: 28rem;
@@ -423,7 +428,7 @@ main {
 
 
 
-
+/*
 .yeet {
     position: absolute;
     min-height: 100vh;
@@ -452,3 +457,4 @@ main {
 .socials-yeet {
     font-size: 48rem;
 }
+*/
