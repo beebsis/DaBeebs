@@ -428,7 +428,11 @@ main {
 
 
 
-/*
+html, body, header, main, footer {
+    overflow: hidden;
+    scroll;
+}
+
 .yeet {
     position: absolute;
     min-height: 100vh;
@@ -457,4 +461,3 @@ main {
 .socials-yeet {
     font-size: 48rem;
 }
-*/
