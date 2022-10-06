@@ -437,6 +437,7 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 50rem;
+    text-transform: uppercase;
     
 }
 
