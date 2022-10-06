@@ -95,7 +95,7 @@ main {
     top: 50%;
     bottom: 50;
     width: 40rem;
-    z-index: 100;
+    z-index: 99;
     display: flex;
     flex-direction: column;
     gap: 25rem;
@@ -419,4 +419,35 @@ main {
         justify-content: flex-end;
         align-items: center;
     }
+}
+
+
+
+
+.yeet {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: var(--cp2-primary);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50rem;
+    
+}
+
+.yeet h1 {
+    font-size: 68rem;
+}
+
+.yeet p {
+    font-size: 40rem;
+}
+
+.socials-yeet {
+    font-size: 48rem;
 }
