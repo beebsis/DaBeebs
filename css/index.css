@@ -259,8 +259,8 @@ main {
 /*! Streamers */
 .streamer-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300rem);
-    grid-template-rows: repeat(auto-fit, 550rem);
+    grid-template-columns: repeat(auto-fill, 300rem) !important;
+    grid-template-rows: repeat(auto-fill, 550rem) !important;
     gap: 50rem;
     justify-content: center;
     padding: 50rem;
