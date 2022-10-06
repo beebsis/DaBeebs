@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;500;600;700;800;900&display=swap');
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,41 +15,47 @@ html {
     font-family: 'Inconsolata', monospace;
     scroll-behavior: smooth;
     /* 
-    making the ROOT font size 1px 
-    Calculation would change to 1px * 20rem = 20px
+    making the ROOT font size 1rem 
+    Calculation would change to 1rem * 20rem = 20rem
     We can do this since IE is no longer getting supported
 
     Increase/reduction would also be easy. 
 
         40% increase
-        @media (min-width: 320px){
-            html{ font-size:1.4px; }
+        @media (min-width: 320rem){
+            html{ font-size:1.4rem; }
         }
 
         20% increase
-        @media (min-width: 600px){
-            html{ font-size:1.2px; }
+        @media (min-width: 600rem){
+            html{ font-size:1.2rem; }
         }
 
         20% decrease
-        @media (min-width: 1920px) {
-            html{ font-size: 0.8px}
+        @media (min-width: 1920rem) {
+            html{ font-size: 0.8rem}
         }
     */
 }
 
 /* Sets the height and with to 100% of screen-size. Fixes horizontal overflow with max and 100%*/
 html, body {
-    min-width: 100vw;
     min-height: 100vh;
     width: 100%;
     height: 100%;
 }
 
+html, body {
+    scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
 header {
     position: fixed;
     top: 0;
-    background-color: var(--cp2-primary);
     width: 100%;
     z-index: 99;
 }
@@ -79,17 +87,189 @@ nav ul {
 a {
     text-decoration: none;
     color: inherit;
-    border-bottom: 3px dotted transparent;
+    border-bottom: 3rem dotted transparent;
     outline: none;
     transition: all ease-in-out .3s;
 }
 
 a:hover {
-    border-bottom: 3px dotted var(--cp1-fourth);
+    border-bottom: 3rem dotted var(--cp1-fourth);
     color: var(--cp3-primary);
 }
 
 a:focus {
-    border-bottom: 3px dotted var(--cp1-fourth);
+    border-bottom: 3rem dotted var(--cp1-fourth);
     color: var(--cp3-primary);
+}
+
+
+
+
+
+
+
+/* desktop mode............/// */
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+display: none;
+}
+
+.navbar {
+box-shadow: 0rem 5rem 10rem 0rem #aaa;
+position: fixed;
+width: 100%;
+background-color: var(--cp2-primary);
+color: #000;
+opacity: 0.85;
+height: 75rem;
+z-index: 12;
+}
+
+.navbar-container {
+display: flex;
+justify-content: space-between;
+height: 64rem;
+align-items: center;
+width: 100%;
+}
+
+.menu-items {
+order: 2;
+display: flex;
+}
+
+.menu-items li {
+list-style: none;
+margin-left: 1.5rem;
+margin-bottom: 0.5rem;
+font-size: 24rem;
+text-transform: capitalize;
+}
+
+.menu-items a {
+text-decoration: none;
+color: #444;
+font-weight: 500;
+transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+color: #117964;
+transition: color 0.3s ease-in-out;
+}
+
+.logo {
+order: 1;
+font-size: 30rem;
+margin-bottom: 0.5rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines {
+        display: block;
+    }
+
+    .navbar-container {
+        display: block;
+        position: relative;
+        height: 64rem;
+    }
+
+    .navbar-container input[type="checkbox"] {
+        position: absolute;
+        display: block;
+        height: 32rem;
+        width: 30rem;
+        top: 20rem;
+        left: 20rem;
+        z-index: 5;
+        opacity: 0;
+    }
+
+    .navbar-container .hamburger-lines {
+        display: block;
+        height: 23rem;
+        width: 35rem;
+        position: absolute;
+        top: 17rem;
+        left: 20rem;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line {
+        display: block;
+        height: 4rem;
+        width: 100%;
+        border-radius: 10rem;
+        background: #333;
+    }
+
+    .navbar-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .navbar .menu-items {
+        padding-top: 100rem;
+        background-color: var(--cp2-primary);
+        height: 100vh;
+        max-width: 300rem;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40rem;
+        padding-left: 50rem;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5rem 10rem 10rem 10rem #aaa;
+        z-index: 1;
+        position: relative;
+    }
+
+    .navbar .menu-items li {
+        margin-bottom: 1.5rem;
+        font-size: 26rem;
+        font-weight: 500;
+    }
+
+    .logo {
+        position: absolute;
+        top: 15rem;
+        right: 15rem;
+        color: inherit;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(35deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-35deg);
+    }
 }
