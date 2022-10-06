@@ -67,6 +67,12 @@ nav {
     padding: 15rem 30rem 15rem 30rem;
 }
 
+nav img {
+    max-height: 56rem;
+    height: 100%;
+    width: auto;
+}
+
 #site-title {
     font-size: 32rem;
     text-transform: uppercase;
