@@ -39,23 +39,18 @@ main {
     font-weight: bold;
 }
 
-#goals, #schedule, #guidelines, #streamer-container {
+#goals,
+#schedule, 
+#guidelines, 
+#streamer-container,
+#art_credits {
     text-align: center;
 }
 
-#goals > h1, #schedule > h1, #guidelines > h1, #streamer-container > h1 {
-    font-size: 46rem;
-}
-
-#goals > p , #schedule > p, #guidelines > p, #streamer-container > p {
-    font-size: 30rem;
-    padding: 15rem 0 15rem 0;
-}
-
-#goals > i , #schedule > i, #guidelines > i, #streamer-container > i {
-    font-size: 50rem;
-    padding-bottom: 15rem;
-}
+.section_arrow { font-size: 50rem; }
+.section_title { font-size: 46rem; }
+.section_info { font-size: 30rem; padding: 15rem 0 15rem 0; }
+.section_icon { font-size: 50rem; padding-bottom: 15rem; }
 
 .card-container {
     display: flex;
@@ -329,6 +324,69 @@ main {
     content: "view";
 }
 
+/*! Artist section*/
+
+.art-credits {
+    padding: 50rem;
+}
+
+.artist-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, auto-fill);
+    grid-template-rows: repeat(auto-fit, auto-fill);
+    gap: 50rem;
+    justify-content: center;
+    padding: 50rem;
+}
+
+.artist {
+    background-color: var(--cp2-primary);
+    border-radius: 15rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.artist-padder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50rem;
+    gap: 25rem;
+}
+
+.artist-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5rem;
+    height: 100%;
+    font-size: 32rem;
+}
+
+.artist-info h2 {
+    font-size: 42rem;
+}
+
+.artist-links {
+    display: flex;
+    gap: 10rem;
+}
+
+.artist.info i {
+    padding-right: 10rem;
+}
+
+.artist-art img {
+    max-width: 800rem;
+    width: 100%;
+    height: auto;
+    border-radius: 25rem;
+}
+
+
+
+
+
 @media screen and (max-width: 900px) {
     .svg-logo-standout img {
         max-height: 128rem;
@@ -423,6 +481,45 @@ main {
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
+    }
+
+    
+
+    .art-credits {
+        padding: 0rem;
+    }
+    
+    .artist-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, auto-fill);
+        grid-template-rows: repeat(auto-fit, auto-fill);
+        gap: 50rem;
+        justify-content: center;
+        padding: 50rem;
+    }
+    
+    .artist {
+        background-color: var(--cp2-primary);
+        border-radius: 15rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .artist-padder {
+        padding: 15rem;
+    }
+
+    .artist-info h2 {
+        font-size: 32rem;
+    }
+    
+    .artist-socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        height: 100%;
+        font-size: 20rem;
     }
 }
 
