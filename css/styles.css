@@ -13,7 +13,7 @@ html {
     background-color: var(--cp2-primary);
     color: var(--cp2-fourth);
     font-family: 'Inconsolata', monospace;
-    /*scroll-behavior: smooth;*/
+    scroll-behavior: smooth;
     /* 
     making the ROOT font size 1rem 
     Calculation would change to 1rem * 20rem = 20rem
@@ -251,7 +251,6 @@ margin-bottom: 0.5rem;
         margin-left: -40rem;
         padding-left: 50rem;
         transition: transform 0.5s ease-in-out;
-        box-shadow: 5rem 10rem 10rem 10rem #aaa;
         z-index: 1;
         position: relative;
     }

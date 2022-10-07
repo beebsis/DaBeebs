@@ -43,13 +43,15 @@ main {
 #schedule, 
 #guidelines, 
 #streamer-container,
-#art_credits {
+#art_credits,
+#top_contributors,
+#contribute {
     text-align: center;
 }
 
-.section_arrow { font-size: 50rem; }
+.section_arrow { font-size: 50rem; margin-bottom: 50rem;}
 .section_title { font-size: 46rem; }
-.section_info { font-size: 30rem; padding: 15rem 0 15rem 0; }
+.section_info { font-size: 30rem; padding: 15rem 0 15rem 0; max-width: 60%; margin: 0 auto;}
 .section_icon { font-size: 50rem; padding-bottom: 15rem; }
 
 .card-container {
@@ -324,8 +326,93 @@ main {
     content: "view";
 }
 
-/*! Artist section*/
 
+/*! Top Contributor Section*/
+.contributor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.contributor-box {
+    max-height: 150rem;
+    max-width: 256rem;
+    width: 100%;
+    font-size: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream-cream1);
+    opacity: 0.85;
+    padding: 5rem;
+    border-radius: 10rem;
+    text-transform: capitalize;
+}
+
+.contributor-box div {
+    width: 100%;
+}
+
+.contributor-box div:last-child {
+    font-size: 18rem;
+    border-radius: 0 0 10rem 10rem;
+    color: var(--cp2-primary);
+}
+
+.Donation {background-color:var(--donations);}
+.Bits {background-color: var(--bits);}
+.gifted-subs {background-color: var(--gifted-subs);}
+.helper {background-color: var(--helper);}
+.clips {background-color: var(--clips);}
+.art {background-color: var(--art);}
+.edits {background-color: var(--edits);}
+.activity {background-color: var(--activity);}
+.events {background-color: var(--events);}
+.certified-Belpas {background-color: var(--certified-belpas);}
+.hypesquad {background-color: var(--hypesquad);}
+.beebs-Punisher {background-color: var(--beebs-punisher);}
+
+/*! Contribute section*/
+.contribute-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75rem;
+    max-width: 1200rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50rem;
+}
+
+.contribute-container div {
+    height: 400rem;
+}
+
+.how-to-contribute {
+    font-size: 32rem;
+    text-align: left;
+    max-width: 500rem;
+}
+
+.how-to-contribute-list {
+    font-size: 30rem;
+    text-align: left;
+}
+
+.contribute-container div:first-child {
+    flex: 2;
+}
+
+
+.contribute-container div:last-child {
+    flex: 1;
+}
+
+
+
+/*! Artist section*/
 .art-credits {
     padding: 50rem;
 }
@@ -382,6 +469,15 @@ main {
     height: auto;
     border-radius: 25rem;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -483,7 +579,63 @@ main {
         align-items: center;
     }
 
+    .contributor-container {
+        border-radius: 10rem;
+        padding: 5rem;
+        text-transform: capitalize;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .contributor-box {
+        max-width: 40%;
+    }
+
+    .contributor-box div:first-child {
+        font-size: 20rem;
+    }
+
+    .contributor-box div:last-child {
+        font-size: 14rem;
+    }
+
+
+    .contribute-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 75rem;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50rem;
+    }
     
+    .contribute-container div {
+        height: 400rem;
+    }
+    
+    .how-to-contribute {
+        font-size: 24rem;
+        text-align: left;
+        max-width: 500rem;
+    }
+    
+    .how-to-contribute-list {
+        font-size: 20rem;
+        text-align: left;
+    }
+    
+
+
+
+
+
+
+
+
 
     .art-credits {
         padding: 0rem;
