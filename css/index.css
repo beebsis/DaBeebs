@@ -71,7 +71,7 @@ main {
     max-width: 280rem;
     min-height: 280rem;
     padding: 15rem;
-    background-color: var(--cp2-primary);
+    background-color: var(--cream-cream1);
     border-radius: 15rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -236,7 +236,7 @@ main {
     padding: 20rem;
     display: flex;
     flex-direction: column;
-    background-color: var(--cp2-primary);
+    background-color: var(--cream-cream1);
     border-radius: 15rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -272,7 +272,7 @@ main {
     padding: 20rem;
     display: flex;
     flex-direction: column;
-    background-color: var(--cp2-primary);
+    background-color: var(--cream-cream1);
     border-radius: 15rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     gap: 15rem;
@@ -427,7 +427,7 @@ main {
 }
 
 .artist {
-    background-color: var(--cp2-primary);
+    background-color: var(--cream-cream1);
     border-radius: 15rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
