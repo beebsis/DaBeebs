@@ -675,11 +675,10 @@ main {
     }
 }
 
-/*
+
 
 html, body, header, main, footer {
     overflow: hidden;
-    scroll;
 }
 
 .yeet {
@@ -699,6 +698,12 @@ html, body, header, main, footer {
     
 }
 
+.yeet img {
+    max-height: 64rem;
+    height: 100%;
+    width: auto;
+}
+
 .yeet h1 {
     font-size: 68rem;
 }
@@ -710,4 +715,3 @@ html, body, header, main, footer {
 .socials-yeet {
     font-size: 48rem;
 }
-*/
