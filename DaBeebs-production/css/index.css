@@ -1,0 +1,724 @@
+main {
+    background-color: var(--cp2-secondary);
+    padding: 150rem 50rem 25rem 50rem;
+}
+
+
+.header-container {
+    min-height: calc(100vh - 15vh);
+    height: 100%;
+    max-width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.svg-logo-standout {
+    text-align: center;
+}
+
+.svg-logo-standout img {
+    max-height: 256rem;
+    height: 100%;
+    width: auto;
+}
+
+#header-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40rem;
+    padding-left: 15rem;
+    border-left: 5rem solid var(--cp2-primary);
+}
+
+#header-welcome h1 {
+    font-size: 56rem;
+}
+
+#header-welcome div:first-child, #header-welcome div:last-child {
+    font-size: 32rem;
+}
+
+#header-welcome span {
+    font-weight: bold;
+}
+
+#goals,
+#schedule, 
+#guidelines, 
+#streamer-container,
+#art_credits,
+#top_contributors,
+#contribute {
+    text-align: center;
+}
+
+.section_arrow { font-size: 50rem; margin-bottom: 50rem;}
+.section_title { font-size: 46rem; }
+.section_info { font-size: 30rem; padding: 15rem 0 15rem 0; max-width: 60%; margin: 0 auto;}
+.section_icon { font-size: 50rem; padding-bottom: 15rem; }
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50rem;
+    padding: 50rem 0 50rem 0;
+}
+
+.card-container > div{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 280rem;
+    min-height: 280rem;
+    padding: 15rem;
+    background-color: var(--cream-cream1);
+    border-radius: 15rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-container h2 {
+    font-size: 28rem;
+    padding-bottom: 15rem;
+}
+
+.card-container p {
+    font-size: 18rem;
+}
+
+.socials {
+    font-size: 48rem;
+    position: fixed;
+    left: 25rem;
+    top: 50%;
+    bottom: 50;
+    width: 40rem;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    gap: 25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* ?SCHEDULE */
+#schedule {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.schedule-day-header {
+    text-align: left;
+}
+.schedule-day-header h1 {
+    font-size: 48rem;
+}
+
+.schedule-day-header p {
+    font-size: 28rem;
+}
+
+.week-day {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    max-width: 620rem;
+    background-color: var(--cp2-third);
+}
+
+.break {
+    opacity: .45;
+}
+
+
+.week-day div {
+    padding: 15rem;
+}
+
+.day {
+    font-size: 30rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 60rem;
+    text-align: center;
+    flex: 3;
+}
+
+.content {
+    flex: 1;
+}
+.content p:first-child {
+    font-size: 24rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.content p:last-child {
+    font-size: 18rem;
+}
+
+.time span {
+    font-size: 24rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex: 2;
+}
+
+.day-list {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15rem;
+}
+
+.schedule-info {
+    position: relative;
+    z-index: 1;
+    padding: 50rem;
+}
+
+.schedule-container {
+    position: relative;
+}
+
+.schedule-img {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    background-color: var(--cp2-second);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='88' viewBox='0 0 88 88'%3E%3Cg fill='%23fbf0f0' fill-opacity='0.5'%3E%3Cpath fill-rule='evenodd' d='M29.42 29.41c.36-.36.58-.85.58-1.4V0h-4v26H0v4h28c.55 0 1.05-.22 1.41-.58h.01zm0 29.18c.36.36.58.86.58 1.4V88h-4V62H0v-4h28c.56 0 1.05.22 1.41.58zm29.16 0c-.36.36-.58.85-.58 1.4V88h4V62h26v-4H60c-.55 0-1.05.22-1.41.58h-.01zM62 26V0h-4v28c0 .55.22 1.05.58 1.41.37.37.86.59 1.41.59H88v-4H62zM18 36c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H20a2 2 0 0 1-2-2zm0 16c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H20a2 2 0 0 1-2-2zm16-26a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zM34 58a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zM34 78a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-6zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-6zM34 4a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4zm-8 82a2 2 0 1 1 4 0v2h-4v-2zm0-68a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0V18zM66 4a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0V4zm0 72a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0v-8zm-48 0a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0v-8zm0-72a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0V4zm24-4h4v2a2 2 0 1 1-4 0V0zm0 60a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0V60zm14-24c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H58a2 2 0 0 1-2-2zm0 16c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H58a2 2 0 0 1-2-2zm-28-6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 26a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM36 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm-8-8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 68a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16-34a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16-12a2 2 0 1 0 0 4 6 6 0 1 1 0 12 2 2 0 1 0 0 4 10 10 0 1 0 0-20zm-64 0a2 2 0 1 1 0 4 6 6 0 1 0 0 12 2 2 0 1 1 0 4 10 10 0 1 1 0-20zm56-12a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 48a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm-48 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-48a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm24 32a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-4a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm36-36a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM10 44c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm56 0c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm8 24c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zM3 68c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4H5a2 2 0 0 1-2-2zm0-48c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4H5a2 2 0 0 1-2-2zm71 0c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm6 66a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM8 86a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-68A6 6 0 1 1 8 2a6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm36 36a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'/%3E%3C/g%3E%3C/svg%3E");
+    border-radius: 25rem;
+}
+
+/*? Guidelines & roles */
+#guidelines {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.guidelines-container {
+    font-size: 22rem;
+}
+
+.guidelines-container ol {
+    max-width: 75vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    margin: 0 auto;
+}
+
+.discord-role {
+    color: var(--cp5-fourth);
+}
+
+.discord-info {
+    padding-top: 50rem;
+}
+
+.discord-info h2 {
+    font-size: 48rem;
+}
+
+.discord-roles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 256rem);
+    grid-template-rows: repeat(auto-fit, 256rem);
+    gap: 20rem;  
+    justify-content: center;
+    padding: 50rem;
+}
+
+.card-role {
+    padding: 20rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cream-cream1);
+    border-radius: 15rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-role h3, .card-role i {
+    font-size: 28rem;
+}
+
+.card-role h3 {
+    margin-top: auto;
+}
+
+.card-role i {
+    margin-bottom: auto;
+}
+
+.card-role p {
+    font-size: 18rem;
+    flex-grow: 1;
+}
+
+/*! Streamers */
+.streamer-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300rem) !important;
+    grid-template-rows: repeat(auto-fill, 550rem) !important;
+    gap: 50rem;
+    justify-content: center;
+    padding: 50rem;
+}
+
+.streamer {
+    padding: 20rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cream-cream1);
+    border-radius: 15rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    gap: 15rem;
+}
+
+.streamer h3, .card-role i {
+    font-size: 28rem;
+}
+
+.streamer h3 {
+    margin-top: auto;
+}
+
+.streamer_tags {
+    padding: 10rem 0 10rem 0;
+    text-transform: uppercase;
+}
+
+.restriction {
+    margin-bottom: auto;
+    font-size: 28rem;
+}
+
+.streamer p {
+    font-size: 18rem;
+    flex-grow: 1;
+}
+
+.streamer-pic img {
+    width: 256rem;
+    height: auto;
+    border-radius: 12rem;
+}
+
+.restriction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.restriction p {
+    flex-grow: 0;
+}
+
+.streamer_link_btn {
+    padding: 10rem;
+    width: 150rem;
+    margin: 0 auto;
+    color: black;
+    content: "view";
+}
+
+
+/*! Top Contributor Section*/
+.contributor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.contributor-box {
+    max-height: 150rem;
+    max-width: 256rem;
+    width: 100%;
+    font-size: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream-cream1);
+    opacity: 0.85;
+    padding: 5rem;
+    border-radius: 10rem;
+    text-transform: capitalize;
+}
+
+.contributor-box div {
+    width: 100%;
+}
+
+.contributor-box div:last-child {
+    font-size: 18rem;
+    border-radius: 0 0 10rem 10rem;
+    color: var(--cp2-primary);
+}
+
+.Donation {background-color:var(--donations);}
+.Bits {background-color: var(--bits);}
+.gifted-subs {background-color: var(--gifted-subs);}
+.helper {background-color: var(--helper);}
+.clips {background-color: var(--clips);}
+.art {background-color: var(--art);}
+.edits {background-color: var(--edits);}
+.activity {background-color: var(--activity);}
+.events {background-color: var(--events);}
+.certified-Belpas {background-color: var(--certified-belpas);}
+.hypesquad {background-color: var(--hypesquad);}
+.beebs-Punisher {background-color: var(--beebs-punisher);}
+
+/*! Contribute section*/
+.contribute-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75rem;
+    max-width: 1200rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50rem;
+}
+
+.contribute-container div {
+    height: 400rem;
+}
+
+.how-to-contribute {
+    font-size: 32rem;
+    text-align: left;
+    max-width: 500rem;
+}
+
+.how-to-contribute-list {
+    font-size: 30rem;
+    text-align: left;
+}
+
+.contribute-container div:first-child {
+    flex: 2;
+}
+
+
+.contribute-container div:last-child {
+    flex: 1;
+}
+
+
+
+/*! Artist section*/
+.art-credits {
+    padding: 50rem;
+}
+
+.artist-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, auto-fill);
+    grid-template-rows: repeat(auto-fit, auto-fill);
+    gap: 50rem;
+    justify-content: center;
+    padding: 50rem;
+}
+
+.artist {
+    background-color: var(--cream-cream1);
+    border-radius: 15rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.artist-padder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50rem;
+    gap: 25rem;
+}
+
+.artist-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5rem;
+    height: 100%;
+    font-size: 32rem;
+}
+
+.artist-info h2 {
+    font-size: 42rem;
+}
+
+.artist-links {
+    display: flex;
+    gap: 10rem;
+}
+
+.artist.info i {
+    padding-right: 10rem;
+}
+
+.artist-art img {
+    max-width: 800rem;
+    width: 100%;
+    height: auto;
+    border-radius: 25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .svg-logo-standout img {
+        max-height: 128rem;
+        width: auto;
+        margin: 50rem 0 50rem 0;
+    }
+}
+
+@media screen and (max-width: 810px) {
+
+    main {
+        background-color: var(--cp2-secondary);
+        padding: 150rem 15rem 25rem 15rem;
+    }
+
+    .header-container {
+        margin: 0;
+        padding: 15rem;
+        height: 100%;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    #header-welcome {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header-welcome div:first-child {
+        font-size: 30rem;
+    }
+
+    #header-welcome div:last-child {
+        font-size: 24rem;
+    }
+
+    .socials {
+        padding: 25rem;
+    }
+
+    .card-container {
+        flex-wrap: wrap;
+        gap: 25rem;
+    }
+
+    .guidelines-container {
+        padding: 0;
+    }
+
+    .guidelines-container ol {
+        max-width: 75vw;
+        font-size: 18rem;
+        display: flex;
+        flex-direction: column;
+        gap: 15rem;
+        margin: 0 auto;
+    }
+
+    .guidelines-container li {
+        overflow-wrap: break-word;
+    }
+
+    .schedule-info {
+        padding: 25rem 15rem 25rem 15rem;
+    }
+
+    .discord-roles {
+        grid-template-columns: repeat(auto-fill, 256rem);
+        grid-template-rows: repeat(auto-fit, 256rem);
+    }
+
+    .streamer-cards {
+        grid-template-columns: repeat(auto-fill, 256rem);
+        grid-template-rows: repeat(auto-fit, 256rem);
+    }
+
+    .streamer-cards img {
+        width: 100%;
+        height: auto;
+        border-radius: 12rem;
+    }
+
+
+    .socials {
+        font-size: 30rem;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 40rem;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .contributor-container {
+        border-radius: 10rem;
+        padding: 5rem;
+        text-transform: capitalize;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .contributor-box {
+        max-width: 40%;
+    }
+
+    .contributor-box div:first-child {
+        font-size: 20rem;
+    }
+
+    .contributor-box div:last-child {
+        font-size: 14rem;
+    }
+
+
+    .contribute-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 75rem;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50rem;
+    }
+    
+    .contribute-container div {
+        height: 400rem;
+    }
+    
+    .how-to-contribute {
+        font-size: 24rem;
+        text-align: left;
+        max-width: 500rem;
+    }
+    
+    .how-to-contribute-list {
+        font-size: 20rem;
+        text-align: left;
+    }
+    
+
+
+
+
+
+
+
+
+
+    .art-credits {
+        padding: 0rem;
+    }
+    
+    .artist-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, auto-fill);
+        grid-template-rows: repeat(auto-fit, auto-fill);
+        gap: 50rem;
+        justify-content: center;
+        padding: 50rem;
+    }
+    
+    .artist {
+        background-color: var(--cp2-primary);
+        border-radius: 15rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .artist-padder {
+        padding: 15rem;
+    }
+
+    .artist-info h2 {
+        font-size: 32rem;
+    }
+    
+    .artist-socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        height: 100%;
+        font-size: 20rem;
+    }
+}
+
+
+/*
+html, body, header, main, footer {
+    overflow: hidden;
+}
+
+.yeet {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: var(--cp2-primary);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50rem;
+    text-transform: uppercase;
+    
+}
+
+.yeet img {
+    max-height: 64rem;
+    height: 100%;
+    width: auto;
+}
+
+.yeet h1 {
+    font-size: 68rem;
+}
+
+.yeet p {
+    font-size: 40rem;
+}
+
+.socials-yeet {
+    font-size: 48rem;
+}
+*/
