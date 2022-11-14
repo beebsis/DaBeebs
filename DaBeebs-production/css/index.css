@@ -61,10 +61,10 @@ main {
 .section_icon { font-size: 50rem; padding-bottom: 15rem; }
 
 .card-container {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    justify-items: center;
     align-items: center;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(5, 1fr);
     gap: 50rem;
     padding: 50rem 0 50rem 0;
 }
@@ -73,7 +73,6 @@ main {
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
     max-width: 280rem;
     min-height: 280rem;
     padding: 15rem;
@@ -526,8 +525,11 @@ main {
     }
 
     .card-container {
-        flex-wrap: wrap;
-        gap: 25rem;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fill, 256rem);
+        grid-template-rows: repeat(auto-fit, 256rem);
     }
 
     .guidelines-container {
