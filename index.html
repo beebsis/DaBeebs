@@ -10,9 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assets/web-icon.ico"/>
     
+    <!--! Scripts -->
+    <script src="./js/discords_role.js" defer></script>
+    <script src="./js/twitch_streamers.js" defer></script>
+    <script src="./js/top_contributors.js" defer></script>
     <title>Da Beebs</title>
 </head>
 <body>
+<!--
 
     <div class="yeet">
         <img src="./assets/beebsis-logo.svg" alt="">
@@ -20,11 +25,270 @@
         <p>Website getting build - Art getting down</p>
         <p>are you ready?</p>
         <div class="socials-yeet">
+            <a href="https://discord.com/invite/vaAGH5y9zU" target="_blank"><i class="fa-brands fa-discord"></i></a>
             <a href="https://twitch.tv/beebsis" target="_blank"><i class="fa-brands fa-twitch"></i></a>
-            <a href="https://twitter.com/Beebsis/status/1578715505304928256" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
-            <a href="https://discord.gg/vaAGH5y9zU"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://twitter.com/beebsis" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
         </div>
     </div>
+-->
 
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="#goals">Goals</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#guidelines">Guidelines</a></li>
+                    <li><a href="#streamer-container">Streamers</a></li>
+                    <li><a href="#top_contributors">Top Contributors</a></li>
+                    <li><a href="#contribute">Contribute</a></li>
+                    <li><a href="#art_credits">Art Credits</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!--<h1 class="logo"><a href="#main">Da Beebs</a></h1>-->
+                <a href="#main" class="logo"><img src="./assets/beebsis-logo.svg" alt=""></a>
+
+            </div>
+        </nav>
+    </header>
+        <div class="socials">
+            <a href="https://discord.com/invite/vaAGH5y9zU" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://twitch.tv/beebsis" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+            <a href="https://twitter.com/beebsis" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+    <main id="main">
+        <div class="header-container">
+            <div id="header-welcome">
+                <div>
+                    <h1>Welcome to Da beebs</h1>
+                    <p><span>Da Beebs</span> is a place for people to come and enjoy, while they're working or studying. Or simply if they just want to come and relax with a good atmosphere.</p>
+                </div>
+                <div>
+                    <p>
+                        I want to build a Community as a place for people to come and relax, meanwhile they're studying or working or if they just wish to come. I'm am currently still a student myself, and I've been wanting a study partner(s) for a while to improve my own studies but it's easier said than done. So for people who're less social or have less time due to circumstances, I would like to give them the chance of getting a virtual study place and study partner to interact with and increase theirs and my own learning and mood.
+                    </p>
+                    <p><cite>- Beebsis 2022</cite></p>
+                </div>
+            </div>
+            <div class="svg-logo-standout">
+                <img src="./assets/beebsis-logo.svg" alt="">
+            </div>
+        </div>
+
+
+
+        <div id="goals">
+            <i class="fa-solid fa-arrow-down section_arrow"></i>
+            <h1 class="section_title">Goals</h1>
+            <p class="section_info">These are the goals I have set for myself and the Community I wish to create.</p>
+            <i class="fa-sharp fa-solid fa-star section_icon"></i>
+            <div class="card-container">
+                <div class="goal-card-1">
+                    <div class="card-img">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="card-info">
+                        <h2>Atmosphere</h2>
+                        <p>I wish to create a nice and calm atmospheric place where people can concentrate on their work and enjoy the place.</p>
+                        <p>Of course we'll have our chaotic moments from time to time.</p>
+                    </div>
+                </div>
+                <div class="goal-card-2">
+                    <div class="card-img">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="card-info">
+                        <h2>Safe Place</h2>
+                        <p>A safe place for people to come and escape classmates, colleagues or just every day trouble. This isn't a venting place, but we'll listen and help if possible - but we are not professionals.</p>
+                    </div>
+                </div>
+                <div class="goal-card-3">
+                    <div class="card-img">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="card-info">
+                        <h2>Learning</h2>
+                        <p>You'll see everyone learning in one way or another in here, some of us study together around the world, even if it's completely different subjects and timezones.</p>
+                    </div>
+                </div>
+                <div class="goal-card-4">
+                    <div class="card-img">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="card-info">
+                        <h2>Acknowledgement</h2>
+                        <p>A lot of people don't feel acknowledged in their daily life, especially students. I wish to let them know, that they're acknowledged by us, and give them a place to enjoy and relax.</p>
+                    </div>
+                </div>
+                <div class="goal-card-5">
+                    <div class="card-img">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="card-info">
+                        <h2>Creativity</h2>
+                        <p>A lot of the time, it can feel like you're studying to work at a conveyor belt. Not a lot makes sense etc. However, you should never let your creative side down and develop it instead. You can develop it together with the community and me.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="schedule">
+            <i class="fa-solid fa-arrow-down section_arrow"></i>
+            <h1 class="section_title">When are we on?</h1>
+            <p class="section_info">Stay updated on when we are airing!</p>
+            <i class="fa-solid fa-calendar-days section_icon"></i>
+            <div class="schedule-container">
+                <div class="schedule-img">
+
+                </div>
+                <div class="schedule-info">
+                    <div class="schedule-day-header">
+                        <h1>Schedule</h1>
+                        <p>All Times are in CEST/CPH</p>
+                    </div>
+                    <div class="day-list">
+                        <div class="monday week-day break">
+                            <div class="day"><p>MON</p></div>
+                            <div class="content"><p>Break</p><p>||</p></div>
+                            <div class="time"><p><span class="clock">19:00</span><span>/</span><span class="am-pm">7PM</span></p></div>
+                        </div>
+                        <div class="monday week-day">
+                            <div class="day"><p>TUE</p></div>
+                            <div class="content"><p>Games</p><p>Games Or Study</p></div>
+                            <div class="time"><p><span class="clock">19:00</span><span>/</span><span class="am-pm">7PM</span></p></div>
+                        </div>
+                        <div class="monday week-day break">
+                            <div class="day"><p>WED</p></div>
+                            <div class="content"><p>Break</p><p>||</p></div>
+                            <div class="time"><p><span class="clock">19:00</span><span>/</span><span class="am-pm">7PM</span></p></div>
+                        </div>
+                        <div class="monday week-day break">
+                            <div class="day"><p>THU</p></div>
+                            <div class="content"><p>Break</p><p>||</p></div>
+                            <div class="time"><p><span class="clock">19:00</span><span>/</span><span class="am-pm">7PM</span></p></div>
+                        </div>
+                        <div class="monday week-day">
+                            <div class="day"><p>FRI</p></div>
+                            <div class="content"><p>Study Session</p><p>Come and study with me!</p></div>
+                            <div class="time"><p><span class="clock">17:00</span><span>/</span><span class="am-pm">5PM</span></p></div>
+                        </div>
+                        <div class="monday week-day">
+                            <div class="day"><p>SAT</p></div>
+                            <div class="content"><p>Horror Games</p><p>Time to hunt the haunted</p></div>
+                            <div class="time"><p><span class="clock">11:00</span><span>/</span><span class="am-pm">11AM</span></p></div>
+                        </div>
+                        <div class="monday week-day">
+                            <div class="day"><p>SUN</p></div>
+                            <div class="content"><p>Games</p><p>Sunday Vibing</p></div>
+                            <div class="time"><p><span class="clock">11:00</span><span>/</span><span class="am-pm">11AM</span></p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>The Schedule area will change together with schedule updates and will be filled with art, art etc will be season & theme based in the future.</p>
+        </div>
+
+        <!--! Guidelines -->
+        <div id="guidelines">
+            <i class="fa-solid fa-arrow-down section_arrow"></i>
+            <h1 class="section_title">Guideliens and Rules</h1>
+            <p class="section_info">Remember to stay updated with our rules and guidelines for everyones sake.</p>
+            <i class="fa-solid fa-circle-exclamation section_icon"></i>
+            <div class="guidelines-container">
+                <ol>
+                    <li>Remember that we follow the ToS of <a href="https://discordapp.com/tos">Discord</a></li>
+                    <li>Do not discriminate or be disrespectful to users.</li>
+                    <li>Do not attempt to spam or flood channels.</li>
+                    <li>Please do not attempt to create drama.</li>
+                    <li>Offensive avatars and names are not tolerated - will be forcefully changed and possibly banned.</li>
+                    <li>Please use English as your main language, as I want this server to be kept in English.</li>
+                    <li>Don't use alternative accounts in order to cause issues.</li>
+                    <li>Don’t advertise without permission from a staff member. Users with <span class="discord-role">@self-promo</span> is an exception.</li>
+                    <li>Don't spam mentions of roles or users.</li>
+                    <li>Please use the rightful channels to chat in!</li>
+                    <li>Do not disrespect any staff member. They're here to help!</li>
+                    <li>Do not ask for any staff position!</li>
+                    <li>Mutes, kicks and bans are entirely up to staff discretion. Arguing with staff is probably a waste of your time.</li>
+                    <li>Use common sense, not everything has to be written down.</li>
+                    <li>If you want to complain about a staff, or feel like you've been unfairly punished, contact Beebsis#0001.</li>
+                </ol>
+            </div>
+            <div class="discord-info">
+                <h2>Discord roles and meaning</h2>
+                <div class="discord-roles"></div>
+            </div>
+        </div>
+
+        <!--! Streamers -->
+        <div id="streamer-container">
+            <i class="fa-solid fa-arrow-down section_arrow"></i>
+            <h1 class="section_title">Fellow Streamers</h1>
+            <p class="section_info">These are vtuber streamers - which I personally enjoy watching from time to time.</p>
+            <p class="section_info">All of these speak at least English.</p>
+            <i class="fa-solid fa-display section_icon"></i>
+            <div class="streamer-cards"></div>
+        </div>
+
+
+        <!--! Top Contributors -->
+        <div class="top-contributors" id="top_contributors">
+            <i class="fa-solid fa-arrow-down section_arrow"></i>
+            <h1 class="section_title">Hall of Fame</h1>
+            <p class="section_info">The top Belpas who've contributed to the Community.</p>
+            <p class="section_info">You can suggest others, by suggesting them in the Discord with a reason.</p>
+            <i class="fa-solid fa-hand-holding-hand section_icon"></i>
+            <div class="contributor-container"></div>
+        </div>
+
+
+        <div class="contribute" id="contribute">
+            <i class="fa-solid fa-arrow-down section_arrow"></i>
+            <h1 class="section_title">Contribute</h1>
+            <p class="section_info">Contribute in your own way.</p>
+            <i class="fa-solid fa-hand-holding-medical section_icon"></i>
+            <div class="contribute-container">
+                <div class="how-to-contribute">
+                    <h2>How to contribute?</h2>
+                    <p>There are multiple ways to contribute, I do not see contribution as an economic thing, I see it as an investment from you as a member. This can be done in many different ways other than econimic ways.</p>
+                </div>
+                <div class="how-to-contribute-list">
+                    <p>I would love to see people contribute to the Community by being active and helping each other. It's the absolute best sort of contributions you can give. And it also helps yourself in the end when it comes to networking, if you're a content creator of any sort.</p>
+                    <p>You can also contribute by donations, funding for items for the stream etc, if wanted - but never required.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--! Art Credits-->
+        <div class="art-credits" id="art_credits">
+            <i class="fa-solid fa-arrow-down section_arrow"></i>
+            <h1 class="section_title">Art Credits</h1>
+            <p class="section_info">All the art I purchse, I really love and get permission to post here - will be posted here as a way of doing showcase and giving credits.</p>
+            <i class="fa-solid fa-palette section_icon"></i>
+            <div class="artist-container">
+                <div class="artist">
+                    <div class="artist-padder">
+                        <div class="artist-info">
+                            <h2>Emovhell</h2>
+                            <div class="artist-socials">
+                                <a href="https://twitter.com/Emovhell" class="artist-links"><i class="fa-brands fa-twitter"></i><p><span>@</span>Emovhell</p></a>
+                            </div>
+                        </div>
+                        <div class="artist-art">
+                            <img src="./assets/art/emovhell.png" alt="placeholder_image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>
