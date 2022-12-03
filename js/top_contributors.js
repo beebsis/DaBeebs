@@ -1,66 +1,17 @@
+//const tags = ["Donation", "Bits", "gifted-subs", "helper", "clips", "art", "edits", "activity", "events", "certified-Belpas", "hypesquad", "beebs-Punisher"];
 const contributors = [
-    {name:"David", tag:"donation"},
-    {name:"Robert", tag:"helper"},
-    {name:"Adam", tag:"clips"},
-    {name:"Sydney", tag:"edits"},
-    {name:"Chelsea", tag:"art"},
-    {name:"Deborah", tag:""},
-    {name:"Donald"},
-    {name:"Daniel"},
-    {name:"Cody"},
-    {name:"Kyle"},
-    {name:"Joanna"},
-    {name:"Emma"},
-    {name:"Matthew"},
-    {name:"Nicholas"},
-    {name:"Lindsay"},
-    {name:"Matthew"},
-    {name:"Justin"},
-    {name:"Paul"},
-    {name:"Grace"},
-    {name:"Travis"},
-    {name:"Shannon"},
-    {name:"Daniel"},
-    {name:"Marcus"},
-    {name:"Ronald"},
-    {name:"Tony"},
-    {name:"Carlos"},
-    {name:"Bryan"},
-    {name:"George"},
-    {name:"Mary"},
-    {name:"Jacqueline"},
-    {name:"Darin"},
-    {name:"Lisa"},
-    {name:"Chad"},
-    {name:"Glenn"},
-    {name:"Tracie"},
-    {name:"Michael"},
-    {name:"Matthew"},
-    {name:"Kristine"},
-    {name:"Hailey"},
-    {name:"Dawn"},
-    {name:"Laura"},
-    {name:"William"},
-    {name:"Jessica"},
-    {name:"Rodney"},
-    {name:"Matthew"},
-    {name:"Shannon"},
-    {name:"Stephanie"},
-    {name:"Francis"},
-    {name:"Elizabeth"},
-    {name:"Jessica"},
+    { name:"ManaBunXD", tag:"Mental support", class: "mental"},
+    { name:"Lily", tag:"Communtiy Goblin", class:"activity"},
+    { name:"DrunkenJudge", tag:"Mmmrrglllm ", class:"certified-Belpas"},
+    { name:"Angel", tag:"'Murcan friendo", class:"beebs-punisher "}
 ]
-
-const tags = ["Donation", "Bits", "gifted-subs", "helper", "clips", "art", "edits", "activity", "events", "certified-Belpas", "hypesquad", "beebs-Punisher"];
 
 function createContributor() {
     const contributorsList = document.getElementsByClassName("contributor-container");
     console.log(contributorsList);
 
     for (let i = 0; i < contributors.length; i++)
-    {   
-
-        random_tag = Math.floor(Math.random() * tags.length);
+    {
 
         const contributor_box = document.createElement("div")
         const name_span_div = document.createElement("div");
@@ -69,10 +20,10 @@ function createContributor() {
         const contributor_tag = document.createElement("span");
 
         name_span.innerHTML = contributors[i].name;
-        contributor_tag.innerHTML = tags[random_tag];
+        contributor_tag.innerHTML = contributors[i].tag;
 
         contributor_box.classList.add("contributor-box");
-        contributor_tag_div.classList.add(tags[random_tag]);
+        contributor_tag_div.classList.add(contributors[i].class);
 
         contributorsList[0].appendChild(contributor_box);
         contributor_box.appendChild(name_span_div);

@@ -367,7 +367,7 @@ main {
     color: var(--cp2-primary);
 }
 
-.Donation {background-color:var(--donations);}
+.donation {background-color:var(--donations);}
 .Bits {background-color: var(--bits);}
 .gifted-subs {background-color: var(--gifted-subs);}
 .helper {background-color: var(--helper);}
@@ -378,7 +378,8 @@ main {
 .events {background-color: var(--events);}
 .certified-Belpas {background-color: var(--certified-belpas);}
 .hypesquad {background-color: var(--hypesquad);}
-.beebs-Punisher {background-color: var(--beebs-punisher);}
+.beebs-punisher {background-color: var(--beebs-punisher);}
+.mental {background-color: var(--mental)}
 
 /*! Contribute section*/
 .contribute-container {
