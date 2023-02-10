@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+/**
+* ! Resetting the font-size to 1px, was purely a joke
+* ! this is getting changed in the next version with added responsiveness.
+*/
 html {
     font-size: 1px;
     background-color: var(--cp2-primary);
