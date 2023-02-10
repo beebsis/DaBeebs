@@ -1,26 +1,15 @@
 const streamers =
 [
     {
-        name: "xHyraldia",
-        link: "https://twitch.tv/xhyraldia",
-        info: "Aloha! ♥ It´s me, your friendly neighbourhood space dragon! ♥",
-        pegi: {
-            age: "mature",
-            icon: "fa-solid fa-person"
-        },
-        tags: ["Cozy", "Chaotic", "Relaxing"],
-        picture: "xhyraldia.png"
-    },
-    {
-        name: "meiiwukou",
-        link: "https://twitch.tv/meiiwukou",
-        info: "A friend you keep safe in your memories. Let's do our best today too.",
+        name: "sir_crunch_a_lot",
+        link: "https://twitch.tv/sir_crunch_a_lot",
+        info: "I play games, say whats up if you do to...",
         pegi: {
             age: "everyone",
             icon: "fa-solid fa-people-group"
         },
         tags: ["Cozy", "Soft", "Relaxing"],
-        picture: "meiiwukou.jpg"
+        picture: "sir_crunch_a_lot.jpg"
     },
     {
         name: "renaynee ",
@@ -67,15 +56,26 @@ const streamers =
         picture: "huntress_venus.png"
     },
     {
-        name: "zellisart",
-        link: "https://twitch.tv/zellisart",
-        info: "I stream art/drawing and various video games. I'm picky and I mostly play FPS, don't like PvP. I'm a CASUAL gamer.",
+        name: "newtypebtw",
+        link: "https://twitch.tv/newtypebtw",
+        info: "Gamer",
         pegi: {
             age: "mature",
             icon: "fa-solid fa-person"
         },
-        tags: ["Chaotic", "Tomboi", "Cozy"],
-        picture: "zellisart.png"
+        tags: ["Chaotic", "Vermins", "Chaos"],
+        picture: "NewType.jpg"
+    },
+    {
+        name: "notmes",
+        link: "https://twitch.tv/notmes",
+        info: "Full time streamer since 2014, US WoW Regionals Champion 2017, Blizzcon WoW Champion 2018.",
+        pegi: {
+            age: "mature",
+            icon: "fa-solid fa-person"
+        },
+        tags: ["Chaotic", "WoW", "Professional"],
+        picture: "notmes.jpg"
     },
     {
         name: "xxspexiexx",
@@ -91,7 +91,7 @@ const streamers =
     {
         name: "KyeraMoon",
         link: "https://twitch.tv/KyeraMoon",
-        info: "hellu I'm Kyera a new png tuber. I'm a solid 18 years old and I really like video games (duhh)",
+        info: "hellu I'm Kyera a new png tuber. I really like video games (duhh)",
         pegi: {
             age: "everyone",
             icon: "fa-solid fa-people-group"
@@ -100,17 +100,31 @@ const streamers =
         picture: "KyeraMoon.jpg"
     },
     {
-        name: "hoshiiko__",
-        link: "https://twitch.tv/hoshiiko__",
-        info: "en/việt vtuber~! I'm an ex-princess here to vibe with the cuties~",
+        name: "theonemanny",
+        link: "https://twitch.tv/theonemanny",
+        info: "loud dog man vtuber thing since 2016",
         pegi: {
             age: "mature",
             icon: "fa-solid fa-person"
         },
-        tags: ["Crazy", "Chaotic", "WTF"],
-        picture: "hoshiko__.png"
+        tags: ["Chaos", "Chaotic", "WTF"],
+        picture: "theonemanny.png"
     },
 ]
+
+/*
+    {
+        name: "",
+        link: "https://twitch.tv/NAME",
+        info: "",
+        pegi: {
+            age: "mature",
+            icon: "fa-solid fa-person"
+        },
+        tags: ["TAG", "TAG", "TAG"],
+        picture: ""
+    },
+ */
 
 function createStreamer() {
     const streamerList = document.getElementsByClassName("streamer-cards");
