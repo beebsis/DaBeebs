@@ -32,14 +32,6 @@ main {
     border-left: 5px solid var(--cp2-primary);
 }
 
-#header-welcome h1 {
-    font-size: 56px;
-}
-
-#header-welcome div:first-child, #header-welcome div:last-child {
-    font-size: 32px;
-}
-
 #header-welcome span {
     font-weight: bold;
 }
@@ -93,20 +85,22 @@ main {
 }
 
 .socials {
-    font-size: 48px;
     position: fixed;
     left: 25px;
     top: 50%;
     bottom: 50;
     width: 40px;
     z-index: 99;
+}
+
+.socials-wrapper {
+    width: fit-content;
     display: flex;
     flex-direction: column;
     gap: 25px;
     justify-content: center;
-    align-items: center;
+    height:fit-content;
 }
-
 
 
 
@@ -207,7 +201,7 @@ main {
 }
 
 .guidelines-container {
-    font-size: 22px;
+    font-size: 2rem;
 }
 
 .guidelines-container ol {
@@ -539,10 +533,6 @@ artist-art-grid {
         font-size: 24px;
     }
 
-    .socials {
-        padding: 25px;
-    }
-
     .card-container {
         flex-wrap: wrap;
         gap: 25px;
@@ -585,18 +575,27 @@ artist-art-grid {
         border-radius: 12px;
     }
 
-
     .socials {
-        font-size: 30px;
         position: fixed;
         left: 0;
+        top: 100;
         bottom: 0;
-        width: 40px;
-        z-index: 100;
+        width: 100%;
+        z-index: 99;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
+        align-items: flex-end;
+    }
+
+    .socials-wrapper {
+        width: 100%;
+        background-color: var(--cp2-primary);
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: flex-end;
+        height:fit-content;
     }
 
     .contributor-container {

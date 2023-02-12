@@ -77,7 +77,6 @@ nav img {
 }
 
 #site-title {
-    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -97,7 +96,7 @@ a {
     color: inherit;
     outline: none;
     transition: all ease-in-out .3s;
-    padding: 30px;
+    padding: 15px;
     background-color: inherit;
     border-radius: 7px;        
 }
@@ -112,17 +111,6 @@ a:focus {
     background-color: var(--cp3-third);
 }
 
-
-
-
-
-
-
-/* desktop mode............/// */
-.navbar input[type="checkbox"],
-.navbar .hamburger-lines {
-display: none;
-}
 
 .navbar {
 box-shadow: 0 15px 25px 0 #aaa;
@@ -150,7 +138,6 @@ display: flex;
 
 .menu-items li {
 list-style: none;
-font-size: 1.5rem;
 text-transform: capitalize;
 }
 
@@ -168,7 +155,6 @@ transition: color 0.3s ease-in-out;
 
 .logo {
 order: 1;
-font-size: 1rem;
 }
 
 
