@@ -1,15 +1,9 @@
 const streamers =
 [
     {
-<<<<<<< Updated upstream
         name: "sir_crunch_a_lot",
         link: "https://twitch.tv/sir_crunch_a_lot",
         info: "I play games, say whats up if you do to...",
-=======
-        name: "meiiwukou",
-        link: "https://twitch.tv/meiiwukou",
-        info: "A friend you keep safe in your memories. Let's do our best today too.",
->>>>>>> Stashed changes
         pegi: {
             age: "everyone",
             icon: "fa-solid fa-people-group"
@@ -62,15 +56,8 @@ const streamers =
         picture: "huntress_venus.png"
     },
     {
-<<<<<<< Updated upstream
-        name: "newtypebtw",
         link: "https://twitch.tv/newtypebtw",
         info: "Gamer",
-=======
-        name: "zellisart",
-        link: "https://twitch.tv/zellisart",
-        info: "Art/drawing and various video games. I'm picky and I mostly play FPS, don't like PvP. I'm a CASUAL gamer.",
->>>>>>> Stashed changes
         pegi: {
             age: "mature",
             icon: "fa-solid fa-person"
@@ -149,16 +136,6 @@ const streamers =
         picture: ""
     },
  */
-=======
-            age: "",
-            icon: "fa-solid fa-person"
-        },
-        tags: ["TAG1", "TAG2", "TAG3"],
-        picture: "NAME__.png"
-    },
-
-*/
->>>>>>> Stashed changes
 
 function createStreamer() {
     const streamerList = document.getElementsByClassName("streamer-cards");
