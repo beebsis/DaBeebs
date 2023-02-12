@@ -210,6 +210,7 @@ main {
     flex-direction: column;
     gap: 15px;
     margin: 0 auto;
+    text-align: left;
 }
 
 .discord-role {
