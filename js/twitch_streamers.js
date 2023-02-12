@@ -1,9 +1,15 @@
 const streamers =
 [
     {
+<<<<<<< Updated upstream
         name: "sir_crunch_a_lot",
         link: "https://twitch.tv/sir_crunch_a_lot",
         info: "I play games, say whats up if you do to...",
+=======
+        name: "meiiwukou",
+        link: "https://twitch.tv/meiiwukou",
+        info: "A friend you keep safe in your memories. Let's do our best today too.",
+>>>>>>> Stashed changes
         pegi: {
             age: "everyone",
             icon: "fa-solid fa-people-group"
@@ -56,9 +62,15 @@ const streamers =
         picture: "huntress_venus.png"
     },
     {
+<<<<<<< Updated upstream
         name: "newtypebtw",
         link: "https://twitch.tv/newtypebtw",
         info: "Gamer",
+=======
+        name: "zellisart",
+        link: "https://twitch.tv/zellisart",
+        info: "Art/drawing and various video games. I'm picky and I mostly play FPS, don't like PvP. I'm a CASUAL gamer.",
+>>>>>>> Stashed changes
         pegi: {
             age: "mature",
             icon: "fa-solid fa-person"
@@ -110,6 +122,17 @@ const streamers =
         tags: ["Chaos", "Chaotic", "WTF"],
         picture: "theonemanny.png"
     },
+    {
+        name: "sleepypurin",
+        link: "https://twitch.tv/sleepypurin",
+        info: "hi i’m purin, cat vtuber & bringer of comfy vibes! 🍮",
+        pegi: {
+            age: "everyone",
+            icon: "fa-solid fa-people-group"
+        },
+        tags: ["Chaotic", "Cozy", "Illogical"],
+        picture: "sleepypurin.jpg"
+    },
 ]
 
 /*
@@ -118,6 +141,7 @@ const streamers =
         link: "https://twitch.tv/NAME",
         info: "",
         pegi: {
+<<<<<<< Updated upstream
             age: "mature",
             icon: "fa-solid fa-person"
         },
@@ -125,6 +149,16 @@ const streamers =
         picture: ""
     },
  */
+=======
+            age: "",
+            icon: "fa-solid fa-person"
+        },
+        tags: ["TAG1", "TAG2", "TAG3"],
+        picture: "NAME__.png"
+    },
+
+*/
+>>>>>>> Stashed changes
 
 function createStreamer() {
     const streamerList = document.getElementsByClassName("streamer-cards");
@@ -166,8 +200,9 @@ function createStreamer() {
         streamer_restriction_div.classList.add("restriction");
         streamer_icon.classList = streamers[i].pegi.icon;
         streamer_info_div.classList.add("streamer-info");
+        streamer_info_desc.classList.add("streamer-info-desc");
         streamer_tags.classList.add("streamer_tags");
-        streamer_link.classList = "streamer_link_btn";
+        streamer_link_a.classList = "streamer_link_btn";
         streamer_link_a.href = streamers[i].link;
         
 
