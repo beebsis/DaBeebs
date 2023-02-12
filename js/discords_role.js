@@ -1,10 +1,10 @@
 const roles =
 [
     {
-        role_name: "Boobsis",
+        role_name: "Da Beeb",
         role_info: "Personal role for Beebsis.",
         role_fa_icon: "fa-solid fa-hands-holding-child" 
-    },
+    },   
     {
         role_name: "Administrator",
         role_info: "A role for the administrators in the Discord server as well as Twitch moderators.",
@@ -17,16 +17,11 @@ const roles =
     },
     {
         role_name: "Bots",
-        role_info: "The bots we're using in the server.",
+        role_info: "We're using different bots on the server, you can find them through this role.",
         role_fa_icon: "fa-sharp fa-solid fa-gear" 
     },
     {
-        role_name: "Subscriber",
-        role_info: "This role is given automatically to Twitch Subscribers.",
-        role_fa_icon: "fa-solid fa-star"
-    },
-    {
-        role_name: "Self Promo",
+        role_name: "Friends",
         role_info: "This role gives you access to the self-promo channel at level 3, this may change over time.",
         role_fa_icon: "fa-solid fa-bullhorn" 
     },
@@ -38,9 +33,32 @@ const roles =
     {
         role_name: "WoW",
         role_info: "A fun role picked up by those whom play World of Warcraft.",
+        role_fa_icon: "fa-solid fa-dice-d20" 
+    },
+    {
+        role_name: "Community Games",
+        role_info: "If you wish to get pinged with a Community Game event notificaiton.",
+        role_fa_icon: "fa-solid fa-hat-wizard" 
+    },
+    {
+        role_name: "Beepes",
+        role_info: "This role is given automatically to Twitch Subscriber, those whgo support the stream financially through a monthly sub.",
         role_fa_icon: "fa-solid fa-otter" 
-    }
+    },
+    {
+        role_name: "Boosties",
+        role_info: "This role is given automatically to Discord server boosters",
+        role_fa_icon: "fa-solid fa-otter" 
+    },
 ]
+
+/*
+    {
+        role_name: "",
+        role_info: "",
+        role_fa_icon: "" 
+    },
+*/
 
 function createRoleCard() {
     const roleList = document.getElementsByClassName("discord-roles");
