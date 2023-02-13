@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
 :root {
     --main: #1c1f2e;
     --secondary:#2b2d42;
     --third:#e41d60;
     --fourth:#841de4;
     --fifth:#e41d98;
+    --linkedin: #0077b5;
+    --twitter: #1DA1F2;
+    --code: #94e2b2;
+    --github: #f2cb1d;
+    --paypal: #009cde;
+    --twitch: #74cc80 ;
+    --spotify: #1DB954;
 }
 
 * {
@@ -15,6 +23,8 @@
 html, body {
     background-color: var(--main);
     color: white;
+    font-family: 'Inconsolata', monospace;
+    overflow: hidden;
 }
 
 .masonry-container {
@@ -32,6 +42,12 @@ html, body {
     justify-content: stretch;
     align-items: stretch;
     align-content: stretch;
+    border-radius: 5px;
+    transition: all ease-in-out .1s;
+}
+
+.box:hover {
+    scale: 1.01;
 }
 
 .box-1 {
@@ -64,8 +80,8 @@ i {
     font-size: 2.5rem;
 }
 
-.box > p {
-    font-size: 1rem;
+.link-context-wrapper > p {
+    font-size: 1.5rem;
     max-width: 256px;
 }
 
@@ -84,6 +100,35 @@ a {
     text-align: center;
     padding-left: 1em;
     padding-right: 1em; 
+}
+
+
+.box:hover .fa-linkedin {
+    color: var(--linkedin);
+}
+
+.box:hover .fa-twitter {
+    color: var(--twitter);
+}
+
+.box:hover .fa-code {
+    color: var(--code);
+}
+
+.box:hover .fa-github {
+    color: var(--github);
+}
+
+.box:hover .fa-paypal {
+    color: var(--paypal);
+}
+
+.box:hover .fa-twitch {
+    color: var(--twitch);
+}   
+
+.box:hover .fa-spotify {
+    color: var(--spotify);
 }
 
 @media only screen and (max-width: 650px) {
