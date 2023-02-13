@@ -1,0 +1,107 @@
+:root {
+    --main: #1c1f2e;
+    --secondary:#2b2d42;
+    --third:#e41d60;
+    --fourth:#841de4;
+    --fifth:#e41d98;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--main);
+    color: white;
+}
+
+.masonry-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto-fit);
+    grid-auto-rows: repeat(1fr, auto);
+    gap: 10px;
+    height: 100vh;
+}
+
+.box {
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.box-1 {
+    grid-column: 1/3;
+}
+.box-2 {
+    grid-row: 2/4;
+}
+.box-3 {
+    grid-row: 2/3;
+    background-color: var(--third);
+}
+.box-4 {
+    grid-row: 1/3;
+}
+.box-5 {
+    background-color: var(--fifth);
+}
+.box-6 {
+    /* I'm doing nothing */
+    content: 'yeet';
+}
+.box-7 {
+    grid-column: 2/5; 
+    background-color: var(--fourth);
+}
+
+
+i {
+    font-size: 2.5rem;
+}
+
+.box > p {
+    font-size: 1rem;
+    max-width: 256px;
+}
+
+a {
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.link-context-wrapper {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em; 
+}
+
+@media only screen and (max-width: 650px) {
+    .masonry-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        height: 100vh;
+    }
+
+    .box {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .box a {
+        padding: 15px;
+    }
+}
