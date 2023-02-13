@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
 :root {
+    --cp1 :#F0ECE3;
     --main: #1c1f2e;
     --secondary:#2b2d42;
     --third:#e41d60;
@@ -22,9 +23,54 @@
 
 html, body {
     background-color: var(--main);
-    color: white;
+    color: var(--cp1);
     font-family: 'Inconsolata', monospace;
-    overflow: hidden;
+}
+
+header {
+    padding: 15px 10px 15px 10px;
+    position: sticky;
+    height: 5vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+nav img {
+    max-width: 56px;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.hero {
+    gap: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-bottom: 2.5vh;
+    height: 100vh;
+}
+
+.hero-flex {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+}
+
+.hero img {
+    max-width: 512px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .masonry-container {
