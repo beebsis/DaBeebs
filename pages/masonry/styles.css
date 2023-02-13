@@ -99,31 +99,38 @@ a {
 }
 
 
-.box:hover .fa-linkedin {
+.box:hover .fa-linkedin
+.box:focus .fa-linkedin {
     color: var(--linkedin);
 }
 
-.box:hover .fa-twitter {
+.box:hover .fa-twitter
+.box:focus .fa-twitter {
     color: var(--twitter);
 }
 
-.box:hover .fa-code {
+.box:hover .fa-code
+.box:focus .fa-code {
     color: var(--code);
 }
 
-.box:hover .fa-github {
+.box:hover .fa-github
+.box:focus .fa-github {
     color: var(--github);
 }
 
-.box:hover .fa-paypal {
+.box:hover .fa-paypal
+.box:focus .fa-paypal {
     color: var(--paypal);
 }
 
-.box:hover .fa-twitch {
+.box:hover .fa-twitch
+.box:focus .fa-twitch {
     color: var(--twitch);
 }   
 
-.box:hover .fa-spotify {
+.box:hover .fa-spotify
+.box:focus .fa-spotify {
     color: var(--spotify);
 }
 
