@@ -262,6 +262,15 @@ a {
 }
 
 @media only screen and (max-width: 650px) {
+    header {
+        background-color: hsla(230, 24%, 15%, 0.5);
+    }
+
+    nav img {
+        max-width: 28px;
+        height: auto;
+    }
+
     .hero {
         margin-top: 5px;
         height: auto;
