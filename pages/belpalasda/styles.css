@@ -27,6 +27,30 @@ html, body {
     font-family: 'Inconsolata', monospace;
 }
 
+body {
+    position: relative;
+}
+
+.body-svg {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+main,
+footer
+{
+    position: relative;
+}
+header {
+    z-index: 99;
+}
+main,
+footer {
+    z-index: 2;
+}
+
 header {
     padding: 10px 15px 10px 15px;
     position:sticky;
