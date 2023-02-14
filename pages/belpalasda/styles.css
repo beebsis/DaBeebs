@@ -263,6 +263,7 @@ a {
 
 @media only screen and (max-width: 650px) {
     header {
+        height: auto;
         background-color: hsla(230, 24%, 15%, 0.5);
     }
 
