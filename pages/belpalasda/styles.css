@@ -99,6 +99,10 @@ ul {
     max-width: 500px;
 }
 
+.hero-txt1, .hero-txt2 {
+    font-weight: bold;
+}
+
 .hero-experience {
     display: flex;
     flex-direction: column;
@@ -108,7 +112,7 @@ ul {
 
 .name-style {
     color: var(--fifth);
-    font-weight: 600;
+    font-weight: 1000;
 }
 
 .hero img {
