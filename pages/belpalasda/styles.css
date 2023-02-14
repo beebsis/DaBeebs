@@ -13,6 +13,10 @@
     --paypal: #009cde;
     --twitch: #74cc80 ;
     --spotify: #1DB954;
+
+    --dd:#a01443;
+    --ddx:#6315ac;
+    --ddxx:#ab1572;
 }
 
 * {
@@ -33,7 +37,7 @@ body {
 
 .body-svg {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
     overflow: hidden;
 }
@@ -93,6 +97,12 @@ ul {
     align-content: center;
     align-items: center;
     gap: 1.2rem;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: rgba(19, 19, 29, 0.5);
+    border-radius: 5px;
 }
 
 .hero-info {
@@ -192,7 +202,7 @@ ul {
     grid-row: 1/3;
 }
 .box-5 {
-    background-color: var(--fifth);
+    /* background-color: var(--fifth); */
 }
 .box-6 {
     /* I'm doing nothing */
@@ -200,7 +210,7 @@ ul {
 }
 .box-7 {
     grid-column: 2/5; 
-    background-color: var(--fourth);
+    /* background-color: var(--fourth); */
 }
 
 
