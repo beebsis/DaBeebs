@@ -8,11 +8,11 @@
     --fifth:#e41d98;
     --linkedin: #0077b5;
     --twitter: #1DA1F2;
-    --code: #94e2b2;
-    --github: #f2cb1d;
+    --code: #171515;
+    --github: #171515;
     --paypal: #009cde;
-    --twitch: #74cc80 ;
     --spotify: #1DB954;
+    --discord : #5865F2;
 
     --dd:#a01443;
     --ddx:#6315ac;
@@ -29,12 +29,18 @@ html, body {
     background-color: var(--main);
     color: var(--cp1);
     font-family: 'Inconsolata', monospace;
+    overflow-x: hidden;
 }
 
 body {
     position: relative;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 .body-svg {
     position: absolute;
     width: 100vw;
@@ -101,8 +107,10 @@ ul {
     width: 100%;
     margin: 0 auto;
     padding: 25px;
-    background-color: rgba(19, 19, 29, 0.5);
     border-radius: 5px;
+    background-color: rgba(19, 19, 29, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .hero-info {
@@ -143,7 +151,7 @@ ul {
     height: inherit;
     width: inherit;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
 }
@@ -158,11 +166,11 @@ ul {
     transition: all ease-in-out .1s;
 }
 
-.goto1 { grid-column: 2/4; grid-row: 2/3; }
-.goto2 { grid-column:4/5; grid-row: 1/3;  }
-.goto3 { grid-column: 1/4; grid-row: 1/1; }
-.goto4 { grid-column: 1/1; grid-row: 2/4; }
-.goto5 { grid-column: 2/5; grid-row: 3/3; }
+.goto1 { grid-column: 3/5; grid-row: 2/3; }
+.goto2 { grid-column:5/7; grid-row: 1/3;  }
+.goto3 { grid-column: 1/5; grid-row: 1/1; }
+.goto4 { grid-column: 1/3; grid-row: 2/4; }
+.goto5 { grid-column: 3/7; grid-row: 3/3; }
 .goto1:hover, .goto1:focus { background-color:  var(--fifth); }
 .goto2:hover, .goto2:focus { background-color:  var(--fifth); }
 .goto3:hover, .goto3:focus { background-color:  var(--fifth); }
@@ -188,6 +196,10 @@ ul {
     transition: all ease-in-out .1s;
 }
 
+.box a {
+    transition: all ease-in-out .1s;
+}
+
 .box-1 {
     grid-column: 1/3;
 }
@@ -196,7 +208,7 @@ ul {
 }
 .box-3 {
     grid-row: 2/3;
-    background-color: var(--third);
+    /*background-color: var(--third);*/
 }
 .box-4 {
     grid-row: 1/3;
@@ -241,40 +253,15 @@ a {
 }
 
 
-.box:hover .fa-linkedin,
-.box:focus .fa-linkedin {
-    color: var(--linkedin);
-}
+.box-3 { background-color: var(--third) }
+.github-box:hover a { background-color: var(--github) }
+.twitter-box:hover a { background-color: var(--twitter) }
+.linkedin-box:hover a { background-color: var(--linkedin) }
+.spotify-box:hover a { background-color: var(--spotify) }
+.paypal-box:hover a { background-color: var(--paypal) }
+.discord-box:hover a { background-color: var(--discord) }
 
-.box:hover .fa-twitter,
-.box:focus .fa-twitter {
-    color: var(--twitter);
-}
 
-.box:hover .fa-code,
-.box:focus .fa-code {
-    color: var(--code);
-}
-
-.box:hover .fa-github,
-.box:focus .fa-github {
-    color: var(--github);
-}
-
-.box:hover .fa-paypal,
-.box:focus .fa-paypal {
-    color: var(--paypal);
-}
-
-.box:hover .fa-twitch,
-.box:focus .fa-twitch {
-    color: var(--twitch);
-}   
-
-.box:hover .fa-spotify,
-.box:focus .fa-spotify {
-    color: var(--spotify);
-}
 
 @media only screen and (max-width: 650px) {
     header {
