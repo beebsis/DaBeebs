@@ -140,6 +140,14 @@ ul {
     border-radius: 5px;
 }
 
+.hero__footer {
+    display: flex;
+}
+
+.hero__foter > div {
+    width: 100%;
+}
+
 .grid-goto {
     width: 256px;
     height: 256px;
@@ -213,9 +221,11 @@ ul {
 .box-4 {
     grid-row: 1/3;
 }
+/*
 .box-5 {
-    /* background-color: var(--fifth); */
+    /* background-color: var(--fifth); 
 }
+*/
 .box-6 {
     /* I'm doing nothing */
     content: 'yeet';
@@ -235,6 +245,10 @@ i {
     max-width: 256px;
 }
 
+.link-context-wrapper > i {
+    margin-bottom: .4em;
+}
+
 a {
     width: 100%;
     text-decoration: none;
@@ -250,6 +264,7 @@ a {
     text-align: center;
     padding-left: 1em;
     padding-right: 1em; 
+    line-height: 1.2;
 }
 
 
@@ -261,7 +276,14 @@ a {
 .paypal-box:hover a { background-color: var(--paypal) }
 .discord-box:hover a { background-color: var(--discord) }
 
-
+.handle__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    font-size: 1.5rem;
+    margin-bottom: .4em;
+}
 
 @media only screen and (max-width: 650px) {
     header {
