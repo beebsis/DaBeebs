@@ -120,6 +120,10 @@ ul {
     max-width: 500px;
 }
 
+.hero-info, .hero__info__img {
+    z-index: 2;
+}
+
 .hero-txt1, .hero-txt2 {
     font-weight: bold;
 }
@@ -329,6 +333,12 @@ a {
 
 .d__none {
     display: none;
+}
+
+.blob-container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
 }
 @media only screen and (max-width: 650px) {
     header {
