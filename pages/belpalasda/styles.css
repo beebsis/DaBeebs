@@ -51,6 +51,17 @@ body::-webkit-scrollbar{
     overflow: hidden;
 }
 
+.blob-container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.blob {
+    width: 500px;
+    height: 500px;
+}
 main,
 footer
 {
@@ -333,12 +344,6 @@ a {
 
 .d__none {
     display: none;
-}
-
-.blob-container {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
 }
 @media only screen and (max-width: 650px) {
     header {
