@@ -51,6 +51,27 @@ body::-webkit-scrollbar{
     overflow: hidden;
 }
 
+.go__back {
+    background-color: var(--ddxx);
+    padding: 10px;
+    border-radius: .75em;
+    border-width: 2px;
+    border-color: transparent;
+    border-style: solid;
+    transition: all ease-in-out .1s;
+}
+
+.go__back:hover {
+    background: var(--code);
+    border-color: var(--fifth);
+    color: var(--cp1);
+}
+
+.blob {
+    width: auto;
+    height: 100%;
+}
+
 .blob-container {
     position: absolute;
     z-index: 1;
@@ -58,10 +79,7 @@ body::-webkit-scrollbar{
     display: grid;
     place-items: center;
 }
-.blob {
-    width: 500px;
-    height: 500px;
-}
+
 main,
 footer
 {
