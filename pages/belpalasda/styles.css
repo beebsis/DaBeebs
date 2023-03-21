@@ -47,8 +47,15 @@ body::-webkit-scrollbar{
     height: 50%;
     background-image: url(../../assets/layered-waves-haikei.svg);
     background-size: cover;
-    z-index: 1;
+    z-index: 2;
     overflow: hidden;
+}
+
+.finisher-header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
 }
 
 .go__back {
@@ -99,6 +106,7 @@ header {
     position:sticky;
     top: 0;
     height: 10vh;
+    display: none;
 }
 
 nav {
