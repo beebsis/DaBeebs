@@ -187,7 +187,7 @@ ul {
 }
 
 .hero__footer {
-    display: flex;
+    display: none;
 }
 
 .hero__foter > div {
