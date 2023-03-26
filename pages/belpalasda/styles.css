@@ -17,6 +17,8 @@
     --dd:#a01443;
     --ddx:#6315ac;
     --ddxx:#ab1572;
+
+    --colorDelay: 0ms;
 }
 
 * {
@@ -193,8 +195,8 @@ ul {
 }
 
 .grid-goto {
-    width: 256px;
-    height: 256px;
+    width: 512px;
+    height: 512px;
     margin: 0 auto;
     margin-bottom: 50px;
 }
@@ -202,10 +204,27 @@ ul {
 .grid-goto-wrapper {
     height: inherit;
     width: inherit;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 15px;
+    display: grid; 
+    grid-template-columns: repeat(16, 1fr); 
+    grid-template-rows: repeat(16, 1fr); 
+    gap: 15px 15px; 
+    grid-template-areas: 
+        ". . . . . . . . . . . . . . . ."
+        ". . e1 . . g1 . . f2 f2 . . . . . ."
+        ". . e1 c4 . . d1 d1 d1 . . . . e2 e2 ."
+        ". . . c4 . . . d5 . . c1 c1 c1 c1 . ."
+        ". . . c4 b1 b1 . . . b2 b2 b2 . . . ."
+        ". . . c4 b1 b1 a1 a1 a1 b2 b2 b2 . . g2 ."
+        ". f1 . . b1 b1 a1 a1 a1 a4 a4 . . d2 . ."
+        ". f1 d4 . . a2 a2 q1 q1 a4 a4 . d6 d2 . ."
+        ". . d4 d8 . a2 a2 q1 q1 a4 a4 . . d2 f3 ."
+        ". . d4 . . a2 a2 a3 a3 a3 b3 b3 . . f3 ."
+        ". g4 . . b4 b4 b4 a3 a3 a3 b3 b3 c2 . . ."
+        ". . . . b4 b4 b4 . . . b3 b3 c2 . . ."
+        ". . c3 c3 c3 c3 . . d7 . . . c2 . . ."
+        ". e4 e4 . . . . d3 d3 d3 . . c2 e3 . ."
+        ". . . . . . f4 f4 . . g3 . . e3 . ."
+        ". . . . . . . . . . . . . . . ."; 
 }
 
 .goto {
@@ -218,17 +237,150 @@ ul {
     transition: all ease-in-out .1s;
 }
 
-.goto1 { grid-column: 3/5; grid-row: 2/3; }
-.goto2 { grid-column:5/7; grid-row: 1/3;  }
-.goto3 { grid-column: 1/5; grid-row: 1/1; }
-.goto4 { grid-column: 1/3; grid-row: 2/4; }
-.goto5 { grid-column: 3/7; grid-row: 3/3; }
-.goto1:hover, .goto1:focus { background-color:  var(--fifth); }
-.goto2:hover, .goto2:focus { background-color:  var(--fifth); }
-.goto3:hover, .goto3:focus { background-color:  var(--fifth); }
-.goto4:hover, .goto4:focus { background-color:  var(--fifth); }
-.goto5:hover, .goto5:focus { background-color:  var(--fifth); }
+/** Q1**/
+.q1 { grid-area: q1;}
+/** Q2 **/
+.a1 { grid-area: a1; background-color: var(--discord);}
+.a2 { grid-area: a2; background-color: var(--ddx);}
+.a3 { grid-area: a3; background-color: var(--spotify);}
+.a4 { grid-area: a4; background-color: var(--linkedin);}
 
+
+.b1 { grid-area: b1; background-color: var(--ddx);}
+.b2 { grid-area: b2; background-color: var(--discord);}
+.b3 { grid-area: b3; background-color: var(--linkedin);}
+.b4 { grid-area: b4; background-color: var(--spotify);}
+
+.c1 { grid-area: c1; background-color: var(--discord);}
+.c2 { grid-area: c2; background-color: var(--linkedin);}
+.c3 { grid-area: c3; background-color: var(--spotify);}
+.c4 { grid-area: c4; background-color: var(--ddx);}
+
+.d1 { grid-area: d1; background-color: var(--discord);}
+.d2 { grid-area: d2; background-color: var(--linkedin);}
+.d3 { grid-area: d3; background-color: var(--spotify);}
+.d4 { grid-area: d4; background-color: var(--ddx);}
+
+.e1 { grid-area: e1; background-color: var(--ddx);}
+.e2 { grid-area: e2; background-color: var(--discord);}
+.e3 { grid-area: e3; background-color: var(--linkedin);}
+.e4 { grid-area: e4; background-color: var(--spotify);}
+
+.f1 { grid-area: f1; background-color: var(--ddx);}
+.f2 { grid-area: f2; background-color: var(--discord);}
+.f3 { grid-area: f3; background-color: var(--linkedin);}
+.f4 { grid-area: f4; background-color: var(--spotify);}
+
+.d5 { grid-area: d5; background-color: var(--cp1);}
+.d6 { grid-area: d6; background-color: var(--cp1);}
+.d7 { grid-area: d7; background-color: var(--cp1);}
+.d8 { grid-area: d8; background-color: var(--cp1);}
+
+.g1 { grid-area: g1; background-color: var(--cp1);}
+.g2 { grid-area: g2; background-color: var(--cp1);}
+.g3 { grid-area: g3; background-color: var(--cp1);}
+.g4 { grid-area: g4; background-color: var(--cp1);}
+
+
+.q1 {
+	animation: ColorChangeQ1 6000ms ease-in-out var(--colorDelay) infinite both;
+    background-color: #e61f61;
+}
+
+.a1, .a2, .a3, .a4 {
+    animation: ColorChangeQ1 5500ms ease-in-out var(--colorDelay) infinite both;
+    background-color:#e61f61;
+}
+
+.b1, .b2, .b3, .b4 {
+    animation: ColorChangeQ2 5000ms ease-in-out var(--colorDelay) infinite both;
+    background-color:#e61f61;
+}
+
+.c1, .c2, .c3, .c4 {
+    animation: ColorChangeQ4 4500ms ease-in-out var(--colorDelay) infinite both;
+    background-color:#e61f61;
+}
+
+.d1, .d2, .d3, .d4 {
+    animation: ColorChangeQ5 4000ms ease-in-out var(--colorDelay) infinite both;
+    background-color:#e61f61;
+}
+
+.e1, .e2, .e3, .e4,
+.f1, .f2, .f3, .f4 {
+    animation: ColorChangeQ6 3500ms ease-in-out var(--colorDelay) infinite both;
+    background-color:#e61f61;
+}
+
+.d5, .d6, .d7, .d8 {
+    animation: ColorChangeQ2 3000ms ease-in-out var(--colorDelay) infinite both;
+    background-color:#e61f61;
+}
+
+.g1, .g2, .g3, .g4 {
+    animation: ColorChangeQ1 2500ms ease-in-out var(--colorDelay) infinite both;
+    background-color:#e61f61;
+}
+
+@keyframes ColorChangeQ1 {
+    0% { background-color: #e61f61; }
+    25% { background-color: #d11c59; } 
+    50% { background-color: #a01443; } 
+    75% { background-color: #ac1648; } 
+    100% { background-color: #e61f61; }
+}
+
+@keyframes ColorChangeQ2 {
+    0% { background-color: #d11c59; }
+    25% { background-color: #a01443; } 
+    50% { background-color: #e61f61; } 
+    75% { background-color: #ac1648; } 
+    100% { background-color: #d11c59; }
+}
+
+@keyframes ColorChangeQ3 {
+    0% { background-color: #e61f61; }
+    25% { background-color: #d11c59; } 
+    50% { background-color: #a01443; } 
+    75% { background-color: #ac1648; } 
+    100% { background-color: #e61f61; }
+}
+
+@keyframes ColorChangeQ4 {
+    0% { background-color: #d11c59; }
+    25% { background-color: #a01443; } 
+    50% { background-color: #e61f61; } 
+    75% { background-color: #ac1648; } 
+    100% { background-color: #d11c59; }
+}
+
+@keyframes ColorChangeQ5 {
+    0% { background-color: #e61f61; }
+    25% { background-color: #d11c59; } 
+    50% { background-color: #a01443; } 
+    75% { background-color: #ac1648; } 
+    100% { background-color: #e61f61; }
+}
+
+@keyframes ColorChangeQ6 {
+    0% { background-color: #d11c59; }
+    25% { background-color: #a01443; } 
+    50% { background-color: #e61f61; } 
+    75% { background-color: #ac1648; } 
+    100% { background-color: #d11c59; }
+}
+
+.grid-goto-wrapper a {
+    height: 100%;
+    width: 100%;
+    transition: all ease-in-out .1s;
+}
+
+.grid-goto-wrapper a:hover {
+    background-color: var(--cp1);
+    color: var(--code);
+}
 .masonry-container {
     width: 100%;
     display: grid;
@@ -371,6 +523,12 @@ a {
 .d__none {
     display: none;
 }
+
+
+
+
+
+
 @media only screen and (max-width: 650px) {
     header {
         height: auto;
@@ -386,6 +544,8 @@ a {
         margin-top: 5px;
         height: auto;
         text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .hero-txt1 {
@@ -394,6 +554,15 @@ a {
 
     .hero-flex {
         flex-direction: column;
+        padding: 15px;
+    }
+
+    .hero-info {
+        max-width: 50%;
+    }
+
+    .hero__info__img img {
+        max-width: 256px;
     }
 
     .grid-goto {
@@ -415,5 +584,50 @@ a {
 
     .box a {
         padding: 15px;
+    }
+
+    .grid-goto {
+        width: 256px;
+        height: 256px;
+        margin: 0 auto;
+    }
+
+    .grid-goto-wrapper {
+        grid-template-areas: 
+            ". b1 b1 b1 . . . . . . . . . . . ."
+            ". b1 b1 b1 . . . . . . b2 b2 b2 b2 b2 b2"
+            ". b1 b1 b1 a1 a1 a1 a1 a1 a1 b2 b2 b2 b2 b2 b2"
+            ". b1 b1 b1 a1 a1 a1 a1 a1 a1 b2 b2 b2 b2 b2 b2"
+            ". b1 b1 b1 a1 a1 a1 a1 a1 a1 a4 a4 a4 a4 . ."
+            ". b1 b1 b1 a1 a1 a1 a1 a1 a1 a4 a4 a4 a4 . ."
+            ". . a2 a2 a2 a2 q1 q1 q1 q1 a4 a4 a4 a4 . ."
+            ". . a2 a2 a2 a2 q1 q1 q1 q1 a4 a4 a4 a4 . ."
+            ". . a2 a2 a2 a2 q1 q1 q1 q1 a4 a4 a4 a4 . ."
+            ". . a2 a2 a2 a2 q1 q1 q1 q1 a4 a4 a4 a4 . ."
+            ". . a2 a2 a2 a2 a3 a3 a3 a3 a3 a3 b3 b3 b3 ."
+            ". . a2 a2 a2 a2 a3 a3 a3 a3 a3 a3 b3 b3 b3 ."
+            "b4 b4 b4 b4 b4 b4 a3 a3 a3 a3 a3 a3 b3 b3 b3 ."
+            "b4 b4 b4 b4 b4 b4 a3 a3 a3 a3 a3 a3 b3 b3 b3 ."
+            "b4 b4 b4 b4 b4 b4 . . . . . . b3 b3 b3 ."
+            ". . . . . . . . . . . . b3 b3 b3 ."; 
+        }
+
+    .q1 { grid-area: q1; }
+    .b2 { grid-area: b2; }
+    .b1 { grid-area: b1; }
+    .b4 { grid-area: b4; }
+    .a1 { grid-area: a1; }
+    .a2 { grid-area: a2; }
+    .a4 { grid-area: a4; }
+    .a3 { grid-area: a3; }
+    .b3 { grid-area: b3; }
+
+    .c1, .c2, .c3, .c4,
+    .d1, .d2, .d3, .d4,
+    .e1, .e2, .e3, .e4,
+    .f1, .f2, .f3, .f4,
+    .d5, .d6, .d7, .d8,
+    .g1, .g2, .g3, .g4 {
+        display: none;
     }
 }
