@@ -186,10 +186,6 @@ ul {
     border-radius: 5px;
 }
 
-.hero__footer {
-    display: none;
-}
-
 .hero__foter > div {
     width: 100%;
 }
