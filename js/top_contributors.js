@@ -3,7 +3,8 @@ const contributors = [
     { name:"ManaBunXD", tag:"Mental support", class: "mental"},
     { name:"Lily", tag:"Communtiy Goblin", class:"activity"},
     { name:"DrunkenJudge", tag:"Mmmrrglllm ", class:"certified-Belpas"},
-    { name:"Angel", tag:"'Murcan friendo", class:"beebs-punisher "}
+    { name:"Angel", tag:"'Murcan friendo", class:"beebs-punisher"},
+    { name:"Ambyshard", tag:"THE SPOOP", class:"hypesquad"}
 ]
 
 function createContributor() {
