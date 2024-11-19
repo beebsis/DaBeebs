@@ -1,0 +1,116 @@
+/* General theme styles */
+
+/* Light theme styles */
+body.light-theme {
+    --text-color: #27262c;
+    --background-color: #f4f4f9;
+    --background-color-2: #e9e9f2;
+    --primary-color: #938cdf;
+    --primary-color-2: #8680ca;
+    --secondary-color: #664160;
+    --accent-color: #32fe94;
+    --gradient-color-black_coral: #556270;
+    --gradient-color-approx_bittersweet: #ff6b6b;
+    --gradient-color-granite_gray: #616161;
+    --gradient-color-graish_cyan: #9bc5c3;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    --text-color: #e7e4fe;
+    --background-color: #25242d;
+    --background-color-2: #2f2e38;
+    --primary-color: #938cdf;
+    --primary-color-2: #8680ca;
+    --secondary-color: #652278;
+    --accent-color: #32fe94;
+    --gradient-color-black_coral: #556270;
+    --gradient-color-approx_bittersweet: #ff6b6b;
+    --gradient-color-granite_gray: #616161;
+    --gradient-color-graish_cyan: #9bc5c3;
+}
+
+/* Seasonal theme styles */
+body.seasonal-theme {
+    --text-color: #f8f9fa;
+    --background-color: #ff7b7b; /* Light seasonal pink background */
+    --background-color-2: #ffb3b3;
+    --primary-color: #ffdf00; /* Yellow */
+    --primary-color-2: #ff8c00; /* Orange */
+    --secondary-color: #652278;
+    --accent-color: #ff69b4; /* Accent pink */
+    --gradient-color-black_coral: #556270;
+    --gradient-color-approx_bittersweet: #ff6b6b;
+    --gradient-color-granite_gray: #616161;
+    --gradient-color-graish_cyan: #9bc5c3;
+}
+
+/* Dropdown container styles */
+.custom-select {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hide options by default */
+.custom-select .options-container {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 100%; /* Position the options below the selected option */
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Show options when the container is active */
+.custom-select.active .options-container {
+    display: block;
+}
+
+/* Style individual options */
+.custom-select .option {
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    color: var(--text-color);
+}
+
+/* Change style of option when hovered */
+.custom-select .option:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Light theme styles for other elements */
+body.light-theme nav {
+    background-color: var(--background-color);
+}
+
+/* Dark theme styles for other elements */
+body.dark-theme nav {
+    background-color: var(--background-color);
+}
+
+/* Seasonal theme styles for other elements */
+body.seasonal-theme nav {
+    background-color: var(--background-color); /* Seasonal background */
+}
+
+/* Styles for the theme switcher button (selected option) */
+.custom-select .selected-option {
+    padding: 10px;
+    cursor: pointer;
+    color: var(--text-color);
+    font-weight: bold;
+    background-color: var(--background-color-2);
+    outline: 2px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+/* Hover effect on the selected option */
+.custom-select .selected-option:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}

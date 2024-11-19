@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./themes.css" />
+        <link rel="stylesheet" href="./main.css" />
+        <link rel="stylesheet" href="./toolkit.css" />
+        <title>QuestDock</title>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li class="project_title"><a href="#start">QuestDock</a></li>
+                <li><a href="#indicators">Indicators</a></li>
+                <li><a href="#box_widgets">Box Widgets</a></li>
+                <li><a href="#table_Widgets">Table Widgets</a></li>
+                <li><a href="#status_widgets">Status Widgets</a></li>
+            </ul>
+            <div class="custom-select">
+                <!-- The selected option (Windows Themes by default) -->
+                <div class="selected-option" data-theme="light">
+                    Light Mode
+                </div>
+            
+                <!-- Options Container (Hidden initially) -->
+                <div class="options-container">
+                    <div class="option" data-theme="light">Light Mode</div>
+                    <div class="option" data-theme="dark">Dark Mode</div>
+                    <div class="option" data-theme="seasonal">Seasonal</div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <h2>Box Widgets</h2>
+            <hr />
+            <div class="container" id="box_widgets">
+                <div class="taskWidget_container">
+                    <div class="taskLog box_widget">
+                        <div class="taskLog_head">
+                            <h3>QuestDock</h3>
+                        </div>
+                        <div class="taskLog_log_window">
+                            <ul>
+                                <li>
+                                    <p class="userTask_log">
+                                        <span class="taskLog_icon"></span
+                                        >Beebsis:
+                                        <span class="userTask"
+                                            >Creating HTML element</span
+                                        >
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="userTask_log">
+                                        <span class="taskLog_icon"></span
+                                        >Beebsis:
+                                        <span class="userTask"
+                                            >Creating HTML modules</span
+                                        >
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="userTask_log">
+                                        <span class="taskLog_icon"></span
+                                        >Beebsis:
+                                        <span class="userTask"
+                                            >Update UI design</span
+                                        >
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="userTask_log">
+                                        <span class="taskLog_icon"></span
+                                        >Beebsis:
+                                        <span class="userTask"
+                                            >Wait for Rasmus to respond</span
+                                        >
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="userTask_log">
+                                        <span class="taskLog_icon"></span
+                                        >Beebsis:
+                                        <span class="userTask"
+                                            >Pack some items</span
+                                        >
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="userTask_log">
+                                        <span class="taskLog_icon"></span
+                                        >Beebsis:
+                                        <span class="userTask">Ship items</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="taskLog_stats">
+                            <div>
+                                <div>
+                                    <p>Complete</p>
+                                    <span>27</span>
+                                </div>
+                                <div>
+                                    <p>Tasks</p>
+                                    <span>72</span>
+                                </div>
+                                <div>
+                                    <p>Backlog</p>
+                                    <span>129</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <ul>
+                            <li>
+                                <label class="settingsControl">
+                                    <input
+                                        type="checkbox"
+                                        name="borderToggle"
+                                        id="borderToggle"
+                                        checked
+                                    />
+                                    Borders
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="weekday">
+                    <div class="week">
+                        <p>Week 1</p>
+                    </div>
+                    <div class="day">
+                        <p>Monday</p>
+                        <hr>
+                        <span>QuestDock</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

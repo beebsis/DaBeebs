@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    font-family: "Geist Mono", monospace;
+}
+
+body::before {
+    --size: 45px;
+    --line: color-mix(in lch, canvasText, transparent 70%);
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: linear-gradient(
+                90deg,
+                var(--line) 1px,
+                transparent 1px var(--size)
+            )
+            50% 50% / var(--size) var(--size),
+        linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
+            var(--size) var(--size);
+    mask: linear-gradient(-20deg, transparent 10%, white);
+    top: 0;
+    transform-style: flat;
+    pointer-events: none;
+    z-index: -1;
+}
+
+ul {
+    list-style: none;
+    text-transform: uppercase;
+    flex: 1;
+}
+
+nav {
+    padding: 1em 5em 1em 5em;
+    background-color: var(--background-color);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgb(147, 140, 223) 0px 1px 3px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-switcher {
+}
+
+nav > ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    position: relative;
+}
+
+nav a:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 0%;
+    background-color: var(--primary-color);
+
+    -o-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}
+
+a {
+    text-decoration-line: none;
+    color: var(--text-color);
+    transition: ease-in-out all 0.1s;
+}
+a:hover {
+    color: var(--primary-color);
+}
+a:hover:after {
+    width: 80%;
+    background-color: var(--primary-color);
+}
+a:focus {
+    color: var(--primary-color);
+    outline: 1px solid var(--primary-color);
+}
+a:link {
+}
+a:visited {
+}
+a:active {
+}
+
+.wrapper h1, .wrapper h2, .wrapperh3 {
+    color: var(--background-color)
+}
+
+hr {
+    opacity: 15%;
+    margin-bottom: 2em;
+}
+
+.project_title {
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    place-content: center;
+    place-items: center;
+    flex: 1;
+}
+
+.taskLog {
+    background-color: var(--background-color-2);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--primary-color);
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.taskLog.no-borders {
+    border: none;
+}
+
+.taskLog_log_window {
+    padding-top: 6px;
+    margin-bottom: 2em;
+    padding-left: 6px;
+}
+
+.taskLog_log_window > ul > li {
+    margin: 6px 0;
+    padding-left: 6px;
+}
+
+.taskLog_log_window > ul > li > hr {
+    margin: 0;
+    border-color: var(--primary-color);
+    opacity: 15%;
+}
+
+.taskLog_head {
+    background-color: var(--background-color);
+    padding: 10px 20px 10px 20px;
+    border-radius: 16px 16px 0 0;
+}
+
+.userTask_log {
+    padding: 0 12px 0 12px;
+}
+
+.taskLog_icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.taskLog_stats {
+    /*background-color: var(--primary-color);*/
+    border-radius: 0 0 16px 16px;
+}
+
+.taskLog_stats h3 {
+    text-align: center;
+}
+
+.taskLog_stats > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    place-content: center;
+    text-align: center;
+}
+
+.taskLog_stats > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.options {
+    margin-top: 2em;
+    border-radius: 16px;
+    background-color: var(--primary-color);
+    padding: 6px 0 6px 0;
+}
+
+.options ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+.weekday {
+    width: 180px;
+    height: 180px;
+    display: grid;
+    place-content: center;
+    background-color: var(--background-color);
+    border-radius: 32px;
+    font-size: 1.5em;
+}
+
+.week {
+    place-self: start;
+    color: var(--accent-color)
+}
+
+.day hr {
+    opacity: 100%;
+    margin: 0;
+}
+
+.day span {
+    font-size: .75em;
+}
+
+.day:first-child {
+    font-weight: 500;
+}
